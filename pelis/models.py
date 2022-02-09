@@ -17,7 +17,7 @@ from django.utils.text import slugify
 ## Modelo para películas
 
 class Genre(models.Model):
-    nombre = models.CharField(max_length=150, unique=True)
+    nombre = models.CharField(max_length=50, unique=True)
     def __str__(self):
         return self.nombre
     panels = [
@@ -29,12 +29,12 @@ class Genre(models.Model):
 
 class Pelicula(models.Model):
     title = models.CharField('título', max_length=250)
-    slug = models.SlugField(blank=True, max_length=250)
+    slug = models.SlugField(blank=True)
     rating = models.DecimalField(max_digits=6, decimal_places=4)
     link = models.URLField()
     place = models.IntegerField()
     year = models.IntegerField()
-    imagen = models.URLField(max_length=250)
+    imagen = models.URLField()
     cast = models.CharField(max_length = 250, 
         help_text='Introduzca nombres separados por comas')
     generos = models.ManyToManyField(Genre)
@@ -85,10 +85,10 @@ class PelisIndexPage(Page):
         qs = ''
         if decada:
             peliculas = Pelicula.objects.filter(year__gte=1990, 
-                year__lt=2000).order_by('-rating')
+                year__lt=2000)
             qs = f'decada={decada}'
         else:
-            peliculas = Pelicula.objects.all().order_by('-rating')
+            peliculas = Pelicula.objects.all()
 
         context['peliculas'] = self.paginate(request, peliculas)
         context['qs'] = qs
