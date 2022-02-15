@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load wagtailcore_tags wagtailimages_tags blog_tags %}
+{% load wagtailcore_tags wagtailimages_tags %}
 
 {% block body_class %}template-blogpage{% endblock %}
 
@@ -12,42 +12,41 @@
     <!-- Catgegorías-->
     {% with categories=page.categories.all %}
     {% if categories %}
-        <h3>Publicado en :</h3>
-        <ul>
-            {% for category in categories %}
-                <li style="display: inline">
-                    {% image category.icon fill-32x32 style="vertical-align: middle" %}
-                    {{ category.name }}
-                </li>
-            {% endfor %}
-        </ul>
+    <h3>Publicado en :</h3>
+    <ul>
+        {% for category in categories %}
+        <li style="display: inline">
+            {% image category.icon fill-32x32 style="vertical-align: middle" %}
+            {{ category.name }}
+        </li>
+        {% endfor %}
+    </ul>
     {% endif %}
-{% endwith %}
+    {% endwith %}
+    <!--/ Catgegorías-->
 
     <div class="intro">{{ page.intro }}</div>
 
     {{ page.body|richtext }}
 
     <div class="row">
-    {% for item in page.gallery_images.all %}
-    <div class="col-md-3">
-        {% image item.image fill-320x240 %}
-        <p>{{ item.caption }}</p>
+        {% for item in page.gallery_images.all %}
+        <div class="col-md-3">
+            {% image item.image fill-320x240 %}
+            <p>{{ item.caption }}</p>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-    </div>
-    
+
     {% if page.tags.all.count %}
     <div class="tags">
         <h3>Tags</h3>
         {% for tag in page.tags.all %}
-            <a href="{% slugurl 'tags' %}?tag={{ tag }}"><button type="button">{{ tag }}</button></a>
+        <a href="{% slugurl 'tags' %}?tag={{ tag }}"><button type="button">{{ tag }}</button></a>
         {% endfor %}
     </div>
     {% endif %}
     <p><a href="{{ page.get_parent.url }}">Volver al blog</a></p>
 </div>
-
-{% categories_list %}
 
 {% endblock %}
