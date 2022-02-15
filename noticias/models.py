@@ -71,10 +71,10 @@ class NewsPage(Page):
         FieldPanel('intro'),
         FieldPanel('body', classname="full"),
         FieldPanel('summary', classname="full"),
-        #InlinePanel('gallery_images', label="Galería de imágenes"),
+        InlinePanel('gallery_images', label="Galería de imágenes"),
     ]
 
-''' class NewsPageGalleryImage(Orderable):
+class NewsPageGalleryImage(Orderable):
     page = ParentalKey(NewsPage, 
         on_delete=models.CASCADE, 
         related_name='gallery_images')
@@ -86,7 +86,7 @@ class NewsPage(Page):
     panels = [
         ImageChooserPanel('image'),
         FieldPanel('caption'),
-    ] '''
+    ]
 
 ''' @register_snippet
 class BlogCategory(models.Model):
