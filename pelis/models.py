@@ -60,6 +60,8 @@ class Pelicula(models.Model):
         
 
 class PelisIndexPage(Page):
+    max_count = 1
+
     introduccion = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [

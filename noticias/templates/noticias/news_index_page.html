@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-blogindexpage{% endblock %}
+
+{% block content %}
+<h3>{{page.title}}</h3>
+{% for new in news %}
+<div class="row">
+    <div class="card w-75">
+        <div class="card-body">
+            <h5 class="card-title">{{ new.title }}</h5>
+            <p class="card-text">{{ new.specific.summary|richtext }}</p>
+            <a href="{% pageurl new %}" class="btn btn-primary">Continua leyendo...</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
