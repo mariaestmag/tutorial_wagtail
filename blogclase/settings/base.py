@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'contact',
     'django_extensions',
     'noticias',
+    'libros',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
