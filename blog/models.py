@@ -122,14 +122,17 @@ class FooterText(models.Model):
     accessible on the template via a template tag defined in base/templatetags/
     navigation_tags.py
     """
-    body = RichTextField()
+    body = models.CharField(max_length=255)
+    url = models.URLField(null=True)
+
 
     panels = [
         FieldPanel('body'),
+        FieldPanel('url'),
     ]
 
     def __str__(self):
-        return "Footer text"
+        return self.body
 
     class Meta:
         verbose_name_plural = 'Footer Text'

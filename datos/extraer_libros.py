@@ -1,3 +1,9 @@
+'''
+crear películas
+ejecutar:
+python manage.py shell < datos/extraer_libros.py
+'''
+
 import requests
 from lxml import html
 import json
@@ -6,12 +12,35 @@ url = "https://mapadelibros.es/libros-recomendados/100-libros-llevados-al-cine/"
 r = requests.get(url)
 pagina = html.fromstring(r.text)
 
-lista = pagina.xpath('//div[@class="td-post-content tagdiv-type"]')[0]
-libro = lista.xpath('//div[@class="wp-block-group"]')[0]
-tituloyautor = libro.xpath('.//h3[@class="has-text-align-center"]')[0] 
-tituloyautor.text_content() #van separados por espacio-espacio
-titulo = tituloyautor.text_content().split('-')[0]
-autor = tituloyautor.text_content().split('-')[1]
-imagen = libro.xpath(".//img/@src")[0] #ya contiene la url
-descripcion = libro.xpath('.//div[@class="aawp-product__description"]')[0]
-resumen = descripcion.text_content().split('\n')
+lista = pagina.xpath('.//div[@class="td-post-content tagdiv-type"]')
+libros = lista[0].xpath('.//div[@class="wp-block-group"]')
+
+def datos_libro(libro):
+
+    tituloyautor = libro[0].xpath('.//h3[@class="has-text-align-center"]/text()')[0]
+    descripcion = libro[0].xpath('.//div[@class="aawp-product__description"]/text()')[0]
+    title = tituloyautor.partition("–")[0].strip()
+    author = tituloyautor.partition("–")[2].strip()
+    summary = descripcion.strip()
+    imagen = libro[0].xpath(".//img/@src")[0]
+   
+    # datos a devolver
+    datos = {}
+    # titulo
+    datos['title'] = title
+
+    #autor
+    datos['author'] = author
+
+    #sinopsis
+    datos['summary'] = summary
+    
+    #imagen
+    datos['imagen'] = imagen
+
+    return datos
+
+datos = [datos_libro(l) for l in libros]
+json.dump(datos, open('datos_libros.json', 'w'), ensure_ascii=False)
+
+    

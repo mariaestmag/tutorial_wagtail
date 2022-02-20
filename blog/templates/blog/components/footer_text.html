@@ -1,5 +1,7 @@
 {% load wagtailcore_tags %}
 
 <div class="copyright text-center text-muted" role="note">
-    {{ footer_text|richtext }}
+
+    <a href=" {{ footer_url }}">{{ footer_text|richtext }}</a>
+
 </div>

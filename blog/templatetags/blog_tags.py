@@ -21,7 +21,9 @@ def get_footer_text(context):
     footer_text = ""
     if FooterText.objects.first() is not None:
         footer_text = FooterText.objects.first().body
+        footer_url = FooterText.objects.first().url
 
     return {
         'footer_text': footer_text,
+        'footer_url': footer_url,
     }

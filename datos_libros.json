@@ -1,0 +1,602 @@
+[
+  {
+    "title": "¿Dónde están los niños?",
+    "author": "Mary Higgins Clark",
+    "summary": "Nancy Harmon, joven casada y madre de dos hijos, es acusada injustamente del asesinato de los pequeños, pero el fiscal debe retirar los cargos tras la desaparición del único testigo. La pesadilla se vuelve más aterradora cuando el marido de Nancy se suicida y ella, destrozada, se traslada a Cape Cod. En su nueva residencia, Nancy conoce a Ray Eldredge, con quien se casa.",
+    "imagen": "https://m.media-amazon.com/images/I/513wZ4KvnSL.jpg"
+  },
+  {
+    "title": "127 horas",
+    "author": "Aron Ralston",
+    "summary": "Aron Ralston, un experimentado excursionista de veintisiete años, emprende un solitario paseo por un remoto y estrecho cañón de Utah, cuando una roca de más de trescientos cincuenta kilos se desprende y le aplasta la mano y la muñeca derecha contra la pared del cañón. Además del dolor terrible al que se ve sometido, Aron se da cuenta de que ha quedado completamente atrapado. Nadie sabe dónde está; nadie vendrá a rescatarlo. Le queda agua y comida para pocas horas más. Su única herramienta es una navaja de bolsillo. Sus opciones se agotan una a una. En la quinta noche, presa del delirio y de escalofríos incontrolables, Aron grava su propio epitafio en la pared de roca, convencido de que ya no volverá a ver la luz del día.",
+    "imagen": "https://m.media-amazon.com/images/I/51-DVMnE-8L.jpg"
+  },
+  {
+    "title": "A sangre fría",
+    "author": "Truman Capote",
+    "summary": "El 15 de noviembre de 1959, en un pueblecito de Kansas, los cuatro miembros de la familia Clutter fueron salvajemente asesinados en su casa. Los crímenes eran, aparentemente, inmotivados, y no se encontraron claves que permitieran identificar a los asesinos. Cinco años después, Dick Hickcock y Perry Smith fueron ahorcados como culpables de las muertes. A partir de estos hechos, y tras realizar largas y minuciosas investigaciones con los protagonistas reales de la historia, Truman Capote dio un vuelco a su carrera de narrador y escribió A sangre fría, la novela que le consagró definitivamente como uno de los grandes de la literatura norteamericana del siglo XX.",
+    "imagen": "https://m.media-amazon.com/images/I/41Jp2w3WFXL.jpg"
+  },
+  {
+    "title": "American Psycho",
+    "author": "Bret Easton Ellis",
+    "summary": "El sofisticado, inteligente y vanidoso Patrick Bateman trabaja en Wall Street, idolatra al joven magnate Donald Trump, cena en los restaurantes de moda de Nueva York y es capaz de distinguir un traje Armani a cincuenta metros de distancia. También le gusta violar, torturar, asesinar y desmembrar.",
+    "imagen": "https://m.media-amazon.com/images/I/41wRAHvUpQL.jpg"
+  },
+  {
+    "title": "Ángeles y Demonios",
+    "author": "Dan Brown",
+    "summary": "Robert Langdon, experto en simbología, es convocado a un centro de investigación suizo para analizar un misterioso signo marcado a fuego en el pecho de un físico asesinado. Allí, Langdon descubre el resurgimiento de una antigua hermandad secreta: los illuminati, que han emergido de las sombras para llevar a cabo la fase final de una legendaria venganza contra su enemigo más odiado: la Iglesia católica.",
+    "imagen": "https://m.media-amazon.com/images/I/51EF19AIHlL.jpg"
+  },
+  {
+    "title": "Aniquilación",
+    "author": "Jeff VanderMeer",
+    "summary": "En un futuro no determinado, el Área X es un lugar remoto y escondido declarado zona de desastre ambiental desde hace décadas. La naturaleza salvaje ha conquistado el lugar y su acceso está prohibido. La agencia estatal Southern Reach ha enviado diversas expediciones pero casi siempre han fracasado: todos los miembros de una expedición se suicidaron; otros enloquecieron y acabaron matándose entre sí, y los integrantes de la última expedición regresaron convertidos en sombras de lo que un día fueron.",
+    "imagen": "https://m.media-amazon.com/images/I/41lRXDo3VkL.jpg"
+  },
+  {
+    "title": "Bajo la piel (Under the skin)",
+    "author": "Michel Faber",
+    "summary": "lsserley es una mujer menuda con pechos grandes y perfectos, lleva gafas de cristales muy gruesos y escotes profundos que hacen olvidar sus ojos, y conduce su coche por carreteras solitarias de Escocia recogiendo autoestopistas. Pero al Toyota rojo de lsserley no sube cualquiera. Ella sólo se detiene ante los hombres. Cuidadosamente elegidos. Siempre fornidos, saludables y solitarios que puedan desaparecer sin que su ausencia cause demasiado ruido.",
+    "imagen": "https://m.media-amazon.com/images/I/411--nDvbsL.jpg"
+  },
+  {
+    "title": "Cabal (Razas de noche)",
+    "author": "Clive Barker",
+    "summary": "Aaron Boone lleva un tiempo sufriendo espantosas pesadillas, en las que se ve cometiendo los crímenes más atroces. Su psicólogo, el doctor Decker, termina de convencerlo de que esos asesinatos han ocurrido realmente. Ahora Boone sabe que en el mundo no hay lugar para él, y deja que el infierno lo llame, quiere que la Muerte lo lleve hasta allí. Pero hasta la mismísima Muerte parece retroceder ante él. Parece que el único refugio para Boone es Midian, aquel terrible y legendario lugar que estrecha entre sus monstruosos brazos a los medio muertos, las razas de noche?",
+    "imagen": "https://m.media-amazon.com/images/I/61WKkkaGs9L.jpg"
+  },
+  {
+    "title": "Caza al asesino",
+    "author": "Jean-Patrick Manchette",
+    "summary": "Un asesino profesional al servicio de una «Compañía» –que nos remite inevitablemente a la CIA– decide retirarse, rehusando una última misión, y regresar a su región natal para reencontrar a su primer amor, ahora una hermosa y convencional burguesa, en una tentativa de borrar las humillaciones de la infancia y de la adolescencia. A partir de este doble esquema –el retiro, el retorno–, sabiamente entretejido y deliberadamente clásico, se desarrolla una sangrienta persecución en la que pululan policías, asesinos, servicios especiales, organizaciones terroristas... y al menos dieciocho cadáveres. En Caza al asesino, la última novela, glacial y trepidante, de Manchette, el «itinerario» de este profesional meticuloso, con toda su panoplia (la extrema competencia, los reflejos impecables, la mirada indiferente), está descrito con un tratamiento realista y a la vez onírico, a fuerza de una precisión maniática que excluye todo psicologismo.",
+    "imagen": "https://m.media-amazon.com/images/I/41uWjYS4mWL.jpg"
+  },
+  {
+    "title": "Celda 211",
+    "author": "Francisco Pérez Gandul",
+    "summary": "La mala suerte lleva a un funcionario de prisiones novato a presentarse en la cárcel de Sevilla el mismo día en que se produce un motín de presos. Enredado en un destino tan caprichoso como trágico, que lo obliga a utilizar al máximo los recursos de su inteligencia, este hombre va descubriendo que no es tímido, que no es débil, que quizá ni siquiera es un hombre bueno, como siempre había creído: es un superviviente nato al borde del abismo.",
+    "imagen": "https://m.media-amazon.com/images/I/51RDW6EoVFL.jpg"
+  },
+  {
+    "title": "Cementerio De Animales",
+    "author": "Stephen King",
+    "summary": "Church estaba allí otra vez, como Louis Creed temía y deseaba. Porque su hijita Ellie le había encomendado que cuidara del gato, y Church había muerto atropellado. Louis lo había comprobado: el gato estaba muerto, incluso lo había enterrado más allá del cementerio de animales. Sin embargo, Chruch había regresado, y sus ojos eran más crueles y perversos que antes. Pero volvía a estar allí y Ellie no lo lamentaría.",
+    "imagen": "https://m.media-amazon.com/images/I/51rgd3ZEP2L.jpg"
+  },
+  {
+    "title": "CeroCeroCero",
+    "author": "Roberto Saviano",
+    "summary": "Mira la cocaína: verás polvo. Mira a través de la cocaína: verás el mundo. «Escribir sobre la cocaína –en palabras del autor– es como consumirla. Cada vez quieres más noticias, más información, y las que encuentras son suculentas, ya no puedes prescindir de ellas... Cuanto más desciendo en los círculos blanqueados de la coca, más me percato de que la gente no sabe. Hay un río que corre bajo las grandes ciudades, un río que nace en Sudamérica, pasa por África y se ramifica hacia todas partes.",
+    "imagen": "https://m.media-amazon.com/images/I/417ud+J4dFL.jpg"
+  },
+  {
+    "title": "Charlie y La Fábrica de Chocolate",
+    "author": "Roald Dahl",
+    "summary": "El señor Wonka ha escondido cinco billetes de oro en sus chocolatinas. Quienes los encuentren serán los afortunados que visiten su magnífica fábrica de chocolate. Charlie tiene la suerte de encontrar uno de ellos y, a partir de ese momento, su vida cambiará para siempre.",
+    "imagen": "https://m.media-amazon.com/images/I/517Ty+CR7SL.jpg"
+  },
+  {
+    "title": "Cherry",
+    "author": "Nico Walker",
+    "summary": "Todas las cosas bellas me llegan al corazón, y se lo follan hasta que estoy a punto de morir.» Así siente este chico de clase media con una vida que estaba destinada al fracaso. El mundo no funcionaba bien pero él vivía en él, hasta que apareció Emilie y se aferró a ella, aun sabiendo que le rompería el corazón. Sacaba algo de dinero extra con las drogas pero no era para nada un mal chico. De acuerdo, la universidad resultó un fracaso y su única salida fue, por qué no, alistarse en el ejército. Pero todo se torció de verdad cuando lo destinaron a la guerra de Irak como Enfermero Guerrero, sin que nadie le entrenara para el horror. Lo sobrellevó como pudo: colocándose con spray y anestésicos, consumiendo snuff movies de ratones y abusando del porno. Nada que a su regreso pudiera evitar el estrés postraumático que les arrastraría, a él y a Emilie, a un espiral de heroína y delincuencia.",
+    "imagen": "https://m.media-amazon.com/images/I/51Sjy5XL9sL.jpg"
+  },
+  {
+    "title": "Cometas en el cielo",
+    "author": "Khaled Hosseini",
+    "summary": "Un fenómeno imparable: con más de 23 millones de ejemplares vendidosen 54 lenguas y un millón en castellano, Cometas en el cielo puede considerarse un clásico contemporáneo.",
+    "imagen": "https://m.media-amazon.com/images/I/51C6LVtVVtL.jpg"
+  },
+  {
+    "title": "Crónicas de Narnia",
+    "author": "C. S. Lewis",
+    "summary": "Cuatro niños que viven en una casa solitaria descubren un armario que da acceso a Narnia, un país congelado en un invierno eterno y sin Navidad. Cumpliendo con las viejas profecías, los niños –junto con el león Aslan- liberarán al país de la tiranía de la Bruja Blanca. Las Crónicas de Narnia es un clásico de la literatura infantil.",
+    "imagen": "https://m.media-amazon.com/images/I/51f06AspehL.jpg"
+  },
+  {
+    "title": "Cuando Hitler robó el conejo rosa (El año que dejamos de jugar)",
+    "author": "Judith Kerr",
+    "summary": "La llegada de Hitler al poder va a cambiar radicalmente la vida de Anna y su familia. En su huida del horror nazi, deberán abandonar su país y dejar muchas cosas queridas, como su conejo de peluche. Con él también se quedará su infancia.",
+    "imagen": "https://m.media-amazon.com/images/I/51a7gXF8pJL.jpg"
+  },
+  {
+    "title": "Cumbres Borrascosas",
+    "author": "Emily Bronte",
+    "summary": "La poderosa y hosca figura del atormentado Heathcliff domina Cumbres Borrascosas, novela apasionada y tempestuosa cuya sensibilidad se adelantó a su tiempo. Los brumosos y sombríos páramos de Yorkshire son el singular escenario donde se desarrolla con fuerza arrebatadora esta historia de venganza y odio, de pasiones desatadas y amores desesperados que van más allá de la muerte y que hacen de ella una de las obras más singulares y atractivas de todos los tiempos.",
+    "imagen": "https://m.media-amazon.com/images/I/51LVpgySevL.jpg"
+  },
+  {
+    "title": "David Copperfield",
+    "author": "Charles Dickens",
+    "summary": "Huérfano de padre, la vida de David Copperfield no es fácil. Su madre se casa con el despreciable señor Murdstone, quién lo maltrata y, tras la muerte de su madre, lo obliga a trabajar con apenas diez años en un almacén de Londres. Harto de su vida, David decide escapar e ir en busca de su tía Betsy, gracias a lo cual su vida tomará un nuevo rumbo.Narrada desde la distancia del adulto, la vida de David Copperfield encierra sátira y humor irónico, luto y angustia, pero también mucha alegría y ruido de personas.David Copperfield siempre fue considerada por su autor, Charles Dickens (1812-1870), una de sus obras más importantes y quizá la más cercana a su propia identidad, pues en parte las desdichas y venturas del joven Copperfield son un reflejo de las vivencias del propio Dickens.",
+    "imagen": "https://m.media-amazon.com/images/I/51L4Pjxv9uL.jpg"
+  },
+  {
+    "title": "Diario de un skin",
+    "author": "Antonio Salas",
+    "summary": "Diario de un skin es la confesión de quien ha logrado por primera vez infiltrarse sin levantar sospechas en un grupo tan peligroso. Con una cámara oculta y tras una falsa identidad, construyó un personaje lo suficientemente convincente como para ganarse la confianza de sus «iguales» y vivir desde dentro la terrible realidad de los cabezas rapadas.Incluye el texto inédito Diario de un skin... tres años después",
+    "imagen": "https://m.media-amazon.com/images/I/51WXSH1iMZL.jpg"
+  },
+  {
+    "title": "Dónde estás, Bernadette",
+    "author": "Maria Semple",
+    "summary": "Una matriarca misántropa provoca una crisis familiar al desaparecer misteriosamente. Una novela irresistible, hilarante y emotiva que ha inspirado la película protagonizada por Cate Blanchett.",
+    "imagen": "https://m.media-amazon.com/images/I/51jFm6ajN4L.jpg"
+  },
+  {
+    "title": "Dunkerque",
+    "author": "Joshua Levine",
+    "summary": "En mayo de 1940, más de 300.000 soldados aliados atrapados en las playas de Dunkerque se salvaron de la aniquilación a manos del ejército nazi gracias a una evacuación naval de proporciones épicas.",
+    "imagen": "https://m.media-amazon.com/images/I/511YIS-CZmL.jpg"
+  },
+  {
+    "title": "El Cartero Siempre Llama Dos Veces",
+    "author": "James M. Cain",
+    "summary": "Al llegar a un deprimente restaurante de carretera, Frank Chambers descubre que allí vive Cora. Él nunca hubiera imaginado que existían mujeres a las que se podía desear tan desesperadamente. La intensa atracción entre ambos solo topa con un enorme obstáculo: el marido de Cora, que también es propietario del negocio.",
+    "imagen": "https://m.media-amazon.com/images/I/51YW2WrVnyL.jpg"
+  },
+  {
+    "title": "El caso del marqués desaparecido (Enola Holmes 01)",
+    "author": "Nancy Springer",
+    "summary": "Enola Holmes, hermana pequeña del famoso detective Sherlock Holmes, decide viajar hasta Londres dispuesta a encontrar alguna pista que la conduzca hasta su madre, desaparecida recientemente. Sin embargo, nadie puede prepararla para lo que la espera allí. Al pisar el asfalto de la ciudad, se verá envuelta en el secuestro de un joven marqués y deberá sortear a toda costa a sus inteligentes hermanos mayores, que pretenden llevarla a un internado. ¿Podrá Enola descifrar los enigmas que le ha dejado su madre y encontrarla?El fabricante nos proporciona este producto con portadas aleatorias. Nos resulta imposible proporcionarte el producto con una portada en particular.",
+    "imagen": "https://m.media-amazon.com/images/I/5161p+0HKOL.jpg"
+  },
+  {
+    "title": "El Código Da Vinci",
+    "author": "Dan Brown",
+    "summary": "Robert Langdon recibe una llamada en mitad de la noche: el conservador del museo del Louvre ha sido asesinado en extrañas circunstancias y junto a su cadáver ha aparecido un desconcertante mensaje cifrado. Al profundizar en la investigación, Langdon, experto en simbología, descubre que las pistas conducen a las obras de Leonardo Da Vinci… y que están a la vista de todos, ocultas por el ingenio del pintor.",
+    "imagen": "https://m.media-amazon.com/images/I/51uv6zn2O7L.jpg"
+  },
+  {
+    "title": "El color que cayó del espacio",
+    "author": "H.P. Lovecraft",
+    "summary": "Para H. P. Lovecraft esta era su mejor obra. Como todo lo que escribió, se trata de una novela corta. Es, con toda seguridad, el mejor exponente de su pensamiento. Sus referentes son Poe y Hawthorne. La acción tiene lugar en esa zona creada por Lovecraft y venerada por la cultura popular: Arkham, una ficticia área rural de Massachusetts. Como maestro indiscutible de la literatura fantástica, Lovecraft quiso crear un nuevo arquetipo de monstruo y lo hizo: convirtió un color indefinido en objeto de un terror incomprensible. Además, sabe meternos en la piel de esa casta de puritanos subdesarrollados y hace que percibamos el hedor que rodea esos bosques que «jamás han sentido el hacha del hombre».",
+    "imagen": "https://m.media-amazon.com/images/I/4165j0XjHAL.jpg"
+  },
+  {
+    "title": "El Conde de Montecristo",
+    "author": "Alejandro Dumas",
+    "summary": "La novela narra la vida de Edmundo Dantés desde que fue apresado injustamente en el castillo de If por un falso cargo de traición, hasta que regresa años después, convertido en el Conde de Montecristo, para ejercer su venganza sobre aquellos que destruyeron su vida. La historia trata temas como la búsqueda de la justicia, la ceguera aristocrática, la ambición, el honor, los cambios de una época tumultuosa en la historia de Francia, la naturaleza del odio y el peso de la maldad sobre el alma humana. Es una ventana a un momento turbio de manipulaciones sociales y políticas, de intriga cortesana y de fascinación por lo exótico y lo desconocido, y un inmortal ejemplo de lo que estaría dispuesto a hacer un hombre por rehacer su vida.",
+    "imagen": "https://m.media-amazon.com/images/I/4107HTcxJoL.jpg"
+  },
+  {
+    "title": "El Cuaderno de Noah",
+    "author": "Nicholas Sparks",
+    "summary": "Una historia de amor que ha encandilado a lectores de todo el mundo. Un clásico inolvidable.",
+    "imagen": "https://m.media-amazon.com/images/I/514F0inZVyL.jpg"
+  },
+  {
+    "title": "El curioso caso de Benjamin Button",
+    "author": "F. Scott Fitzgerald",
+    "summary": "Este libro constituye la quintaesencia del mundo narrativo de Scott Fitzgerald, quizá el narrador más dotado que dio la literatura norteamericana del siglo XX. En todos y cada uno de estos relatos se abordan sus obsesiones recurrentes: la melancolía por el final de una época, los claroscuros de la pareja, el fracaso o la fascinación por el lujo y la riqueza. En el cuento del título, Benjamin Button es un hombre que nace viejo para rejuvenecer lentamente a medida que pasan los años, de modo que su relación con el mundo adquiere una perspectiva insólita e inquietante. Otras historias hablan de hombres que recuerdan sin tregua el momento en que perdieron su oportunidad, como en el extraordinario Regreso a Babilonia, tal vez uno de los mejores cuentos que jamás se han escrito.",
+    "imagen": "https://m.media-amazon.com/images/I/41gSnOHjMwL.jpg"
+  },
+  {
+    "title": "El Decameron",
+    "author": "Giovanni Boccaccio",
+    "summary": "El Decamerón, es un libro constituido por cien cuentos, algunos de ellos novelas cortas, escritos por Giovanni Boccaccio entre 1351 y 1353. Desarrolla tres temas principales: el amor, la inteligencia humana y la fortuna. Los diversos cuentos de amor en el Decamerón van de lo erótico a lo trágico. Son relatos de ingenio, bromas y lecciones vitales.",
+    "imagen": "https://m.media-amazon.com/images/I/51Xl5LW7sbL.jpg"
+  },
+  {
+    "title": "El diario de Ana Frank",
+    "author": "Ana Frank",
+    "summary": "Esta es la edición definitiva del célebre Diario de Anne Frank. Su texto amplía en una cuarta parte las ediciones anteriores y ofrece una visión completa y fidedigna de la terrible odisea vivida durante la Segunda Guerra Mundial por la familia Frank",
+    "imagen": "https://m.media-amazon.com/images/I/51UWOaxkBFL.jpg"
+  },
+  {
+    "title": "El Exorcista",
+    "author": "William Peter Blatty",
+    "summary": "El exorcista es una de las obras de ficción más sobrecogedoras y terroríficas jamás escritas.",
+    "imagen": "https://m.media-amazon.com/images/I/51C7wcgeGgL.jpg"
+  },
+  {
+    "title": "El Gran Gatsby",
+    "author": "Francis Scott Fitzgerald",
+    "summary": "Nadie conocía exactamente quién era Gatsby. Algunos decían que había sido espía de los alemanes durante la Primera Guerra Mundial; otros, que estaba emparentado con una de les familias reales de Europa. Sin embargo, nadie le aventajaba en su espléndida hospitalidad. Las fiestas más maravillosas tenían lugar en su soberbia mansión de Long Island. La ironía de esta fachada fabulosa era que él no la había construido para deslumbrar al mundo, los amigos o la esposa, sino para impresionar a una chica que había amado, que era su sueño, su ilusión.",
+    "imagen": "https://m.media-amazon.com/images/I/51CoRPjusSL.jpg"
+  },
+  {
+    "title": "El Guardián Invisible",
+    "author": "Dolores Redondo",
+    "summary": "En los márgenes del río Baztán, en el valle de Navarra, aparece el cuerpo desnudo de una adolescente en unas circunstancias que lo ponen en relación con un asesinato ocurrido en los alrededores un mes atrás. La inspectora de la sección de homicidios de la Policía Foral, Amaia Salazar, será la encargada de dirigir una investigación que la llevará de vuelta a Elizondo, una pequeña población de donde es originaria y de la que ha tratado de huir toda su vida. Enfrentada con las cada vez más complicadas derivaciones del caso y con sus propios fantasmas familiares, la investigación de Amaia es una carrera contrarreloj para dar con un asesino que puede mostrar el rostro más aterrador de una realidad brutal.",
+    "imagen": "https://m.media-amazon.com/images/I/5137VLO9WYL.jpg"
+  },
+  {
+    "title": "El Halcón Maltés",
+    "author": "Dashiell Hammett",
+    "summary": "Una estatuilla con figura de halcón que los caballeros de la Orden de Malta regalaron al emperador Carlos V en 1530 ha sido objeto, durante más de cuatro siglos, de robos y extravíos. Cuando tras mil peripecias llega a la ciudad de San Francisco, un grupo de delincuentes trata de apoderarse de ella, lo que da lugar a conflictos, asesinatos y pasiones exacerbadas. A ello contribuye el detective Sam Spade empleando sin escrúpulos la violencia más cruda y propiciando la creación de situaciones arriesgadas e imprevisibles, aunque siempre esclarecedoras. Basada en esta obra, John Huston realizó en 1941 una magistral película protagonizada por Humphrey Bogart, Mary Astor y Peter Lorre.",
+    "imagen": "https://m.media-amazon.com/images/I/41B2-fRVMgL.jpg"
+  },
+  {
+    "title": "El hipnotista",
+    "author": "Lars Kepler",
+    "summary": "El hipnotista es la primera entrega de la célebre serie de novelas policíacas protagonizada por el inspector Joona Linna.",
+    "imagen": "https://m.media-amazon.com/images/I/41vjTknURXL.jpg"
+  },
+  {
+    "title": "El Hobbit",
+    "author": "J. R. R. Tolkien",
+    "summary": "Smaug, por cierto, parecía dormido cuando Bilbo espió una vez más desde la entrada. Estaba a punto de dar un paso adelante y en ese momento alcanzó a ver un repentino y delgado rayo rojo bajo el párpado caído del ojo izquierdo de Smaug.",
+    "imagen": "https://m.media-amazon.com/images/I/51ijyJwSFVL.jpg"
+  },
+  {
+    "title": "El Hombre de La Máscara de Hierro",
+    "author": "Alejandro Dumas",
+    "summary": "El hombre de la máscara de hierro es un misterioso personaje francés de los siglos XVII-XVIII, que fue encarcelado por razones desconocidas y permaneció encerrado hasta su muerte en la prisión de la Bastilla. Mientras estuvo en prisión su rostro fue cubierto con una máscara probablemente hecha de terciopelo, aunque la leyenda dice que era de hierro. La primera referencia a su existencia la hizo el filósofo de la Ilustración Voltaire, a través de su obra El siglo de Luis XIV.",
+    "imagen": "https://m.media-amazon.com/images/I/41IbsirW8XL.jpg"
+  },
+  {
+    "title": "El hombre invisible",
+    "author": "H. G. Wells",
+    "summary": "Un día de nieve cerrada llega a una pequeña posada de un pueblo inglés un extraño individuo que cubre su rostro con vendas, sombrero y gafas. Pronto recibe un cargamento de tubos de ensayo y extraños productos y se encierra a trabajar en un misterioso experimento. Todo indica que ha sufrido un terrible accidente, sin embargo, la curiosidad de los vecinos puede más que la compasión y poco a poco conseguirá arrancar al forastero su terrible secreto.",
+    "imagen": "https://m.media-amazon.com/images/I/51vtgGtzU8L.jpg"
+  },
+  {
+    "title": "El Instante Más Oscuro",
+    "author": "Anthony McCarten",
+    "summary": "Este es el relato del tiempo angustioso que vivió Gran Bretaña en mayo de 1940, desde el día 10, en que las tropas de Hitler iniciaron la invasión de Holanda, hasta el 29, cuando los soldados británicos y franceses derrotados por los alemanes embarcaron en Dunquerque para refugiarse en Inglaterra. Esta es una historia que se suele narrar en tonos de epopeya, pero que aquí se revive en torno a la figura de Winston Churchill, de acuerdo con la verdad de aquellos días inciertos, reconstruida con una amplia documentación, que incluye las discusiones del gobierno, y con los testimonios de sus contemporáneos. McCarten nos muestra las dudas de unos días en que se pensó seriamente en negociar con Hitler.",
+    "imagen": "https://m.media-amazon.com/images/I/41rI++FpsNL.jpg"
+  },
+  {
+    "title": "El jardín secreto",
+    "author": "Frances Hodgson Burnett",
+    "summary": "El libro de la nueva adaptación al cine de Jack Thorne, guionista de la obra de teatro Harry Potter y el legado maldito.",
+    "imagen": "https://m.media-amazon.com/images/I/51uiWWEVDRL.jpg"
+  },
+  {
+    "title": "El juego de Ender",
+    "author": "Orson Scott Card",
+    "summary": "La novela más famosa de ciencia ficción moderna: un clásico indiscutible, ganadora de los premios Hugo, Nebula y SF Chronicle.",
+    "imagen": "https://m.media-amazon.com/images/I/4112ZnvAI3L.jpg"
+  },
+  {
+    "title": "El Laberinto Del Fauno",
+    "author": "Guillermo del Toro & Cornelia Funke",
+    "summary": "Una novela oscura y mágica, una inolvidable colaboración entre dos de los narradores más renombrados de nuestros días: Guillermo del Toro y Cornelia Funke.",
+    "imagen": "https://m.media-amazon.com/images/I/41HUz8e0jIL.jpg"
+  },
+  {
+    "title": "El Lobo De Wall Street",
+    "author": "Belfort Jordan",
+    "summary": "Esta es la historia de Jordan Belfort, llamado ‘El lobo de Wall Street’ por sus multimillonarios negocios en el mercado de inversión estadounidense y por su extravagante vida, marcada por los excesos propios de una estrella del rock: sexo, drogas y, en su caso, varios cientos de millones de dólares ganados de modo fraudulento con la compra y venta de acciones a través de Stratton Oakmont, una firma de su propiedad que marcó un antes y un después en la historia de Wall Street.",
+    "imagen": "https://m.media-amazon.com/images/I/51raK+5tSML.jpg"
+  },
+  {
+    "title": "El móvil",
+    "author": "Javier Cercas",
+    "summary": "Publicada por primera vez hace treinta años, El móvil, primera novela de Javier Cercas, es un absorbente thriller metaliterario que parece contener como en germen la obra entera de este novelista, hoy consagrado como uno de los grandes escritores europeos contemporáneos.",
+    "imagen": "https://m.media-amazon.com/images/I/51tzqy07sIL.jpg"
+  },
+  {
+    "title": "El muñeco de nieve",
+    "author": "Jo Nesbo",
+    "summary": "El muñeco de nieve, séptima entrega de la serie de novela negra noruega protagonizada por el atormentado detective Harry Hole, es un combate cara a cara con el mal absoluto.",
+    "imagen": "https://m.media-amazon.com/images/I/41uaZxllnvL.jpg"
+  },
+  {
+    "title": "El niño 44",
+    "author": "Tom Rob Smith",
+    "summary": "Relato trepidante, imposible de abandonar antes del final, esta primera novela del escritor inglés Tom Rob Smith retrata con inusual realismo el ambiente claustrofóbico y la crueldad del estalinismo.",
+    "imagen": "https://m.media-amazon.com/images/I/41zljSsDEVL.jpg"
+  },
+  {
+    "title": "El Paciente Inglés",
+    "author": "Michael Ondaatje",
+    "summary": "Hana, una enfermera agotada por la muerte que la rodea, se dedica obsesivamente a su último paciente. Caravaggio, el ladrón, intenta volver a imaginar quién es ahora que sus manos están irremediablemente mermadas. Kip, el rastreador de minas indio, busca artefactos ocultos en un paisaje donde nadie está a salvo excepto él. En el centro de este laberinto descansa el paciente inglés, completamente abrasado, un hombre sin nombre que es un acertijo y una provocación para sus compañeros, y cuyos recuerdos de traición, dolor y salvación iluminan la novela como destellos de luz ardiente.",
+    "imagen": "https://m.media-amazon.com/images/I/41rbRidwb8L.jpg"
+  },
+  {
+    "title": "El Padrino",
+    "author": "Mario Puzo",
+    "summary": "La publicación de El Padrino en 1969 convulsionó el mundo literario. Por primera vez, la Mafia protagonizaba una novela y era retratada desde dentro. Mario Puzo la presentaba no como una mera asociación de facinerosos, sino como una compleja sociedad con una cultura propia y una jerarquía aceptada incluso más allá de los círculos de la delincuencia.",
+    "imagen": "https://m.media-amazon.com/images/I/415tHoDHibL.jpg"
+  },
+  {
+    "title": "El Perfume",
+    "author": "Historia de Un Asesino – Patrick Suskind",
+    "summary": "Para conseguir el favor de las damas y el dominio de los poderosos, Baptiste elabora un raro perfume que subyuga la voluntad de quien lo huele. La esencia proviene de los fluidos de jovencitas vírgenes y para conseguirla deberá convertirse en un asesino...",
+    "imagen": "https://m.media-amazon.com/images/I/51xwFYJOyDL.jpg"
+  },
+  {
+    "title": "El Retrato de Dorian Gray",
+    "author": "Oscar Wilde",
+    "summary": "Cuando se publicó El retrato de Dorian Gray, la crítica moralizante acusó a su protagonista de ser una figura satánica, corrompida y corruptora, sin comprender que era el héroe de una novela que reflejaba la fatalidad de los románticos: Oscar Wilde (1854-1900) había querido hacer de la belleza un refinamiento de la inteligencia; y para ello sumió a su protagonista en una atmósfera de perversión dominada por el arte y los poderes de un misterio que está más allá de la realidad. Pero el autor va más allá de la simple descripción: incrusta a su personaje en un crimen y, como Edgar Allan Poe en sus relatos, lo rodea de un misterio que la razón no puede explicar.",
+    "imagen": "https://m.media-amazon.com/images/I/51WpJN+6P9L.jpg"
+  },
+  {
+    "title": "El Secreto de Marrowbone",
+    "author": "Sergio G. Sánchez",
+    "summary": "Tras la muerte de su madre, cuatro hermanos deciden esconderse en una granja abandonada para protegerse y evitar que los separen. Pronto descubrirán que Marrowbone esconde un oscuro secreto entre sus paredes.",
+    "imagen": "https://m.media-amazon.com/images/I/51QaKYW8FQL.jpg"
+  },
+  {
+    "title": "El secreto de Selena",
+    "author": "María Celeste Arrarás",
+    "summary": "Un retrato íntimo e investigativo del asesinato de la querida reina de la música tejana, Selena Quintanilla Pérez, escrito por la galardonada periodista María Celeste Arrarás. Ahora, con un nuevo introducción y epílogo por la vigésima edición de aniversario.",
+    "imagen": "https://m.media-amazon.com/images/I/51wugMyzoyL.jpg"
+  },
+  {
+    "title": "El Señor de Las Moscas",
+    "author": "William Golding",
+    "summary": "El señor de las moscas es Premio Nobel de Literatura 1983, una fábula moral acerca de la condición humana.",
+    "imagen": "https://m.media-amazon.com/images/I/41IAgI1lCOL.jpg"
+  },
+  {
+    "title": "El Siglo de las Luces",
+    "author": "Alejo Carpentier",
+    "summary": "Carlos y Sofia viven en una delirante disciplina de deshoras que les lleva a acostarse con el alba, a comer cuando tienen hambre y a vagar por los pasillos donde se acumulan los muebles apolillados. Víctor Hugues se introduce en sus vidas y se hace indispensable para los adolescentes. Con él entrará la vida y las nuevas ideas del siglo XVIII.",
+    "imagen": "https://m.media-amazon.com/images/I/51zGWx316oL.jpg"
+  },
+  {
+    "title": "El silencio de la ciudad blanca",
+    "author": "Eva Garcaí Sáenz de Urturi",
+    "summary": "Tasio Ortiz de Zárate, el brillante arqueólogo condenado por los extraños asesinatos que aterrorizaron la tranquila ciudad de Vitoria hace dos décadas, está a punto de salir de prisión en su primer permiso cuando los crímenes se reanudan de nuevo: en la emblemática Catedral Vieja de Vitoria, una pareja de veinte años aparece desnuda y muerta por picaduras de abeja en la garganta. Poco después, otra pareja de veinticinco años es asesinada en la Casa del Cordón, un conocido edificio medieval.",
+    "imagen": "https://m.media-amazon.com/images/I/51omBAyv2RL.jpg"
+  },
+  {
+    "title": "El Silencio de Los Corderos",
+    "author": "Thomas Harris",
+    "summary": "A Clarice Starling, joven y ambiciosa estudiante de la academia del FBI, le encomiendan que entreviste a Hannibal Lecter, brillante psiquiatra y despiadado asesino, para conseguir su colaboración en la resolución de un caso de asesinatos en serie. El asombroso conocimiento de Lecter del comportamiento humano y su poderosa personalidad cautivarán de inmediato a Clarice, quien, incapaz de dominarse, establecerá con él una ambigua, inquietante y peligrosa relación.",
+    "imagen": "https://m.media-amazon.com/images/I/41762Me4QCL.jpg"
+  },
+  {
+    "title": "El Silmarillion",
+    "author": "J. R. R. Tolkien",
+    "summary": "Tolkien comenzó a escribir El Silmarillion mucho antes que El Hobbit, obra concebida como historia independiente, pero que fue parte de lo que él llamaba un «tema que copia y se ramifica», y del que emergió El Señor de los Anillos.",
+    "imagen": "https://m.media-amazon.com/images/I/514mrvbIEfL.jpg"
+  },
+  {
+    "title": "El Sueño Eterno",
+    "author": "Raymond Chandler",
+    "summary": "¿Serías capaz de resolver un misterioso caso de amenaza de muerte entre la alta sociedad de Hollywood?.",
+    "imagen": "https://m.media-amazon.com/images/I/411H+Ooo8IL.jpg"
+  },
+  {
+    "title": "El Viejo y el Mar",
+    "author": "Ernest Hemingway",
+    "summary": "Con un lenguaje de gran fuerza y sencillez, El viejo y el mar narra la historia de un viejo pescador cubano a quien la suerte parece haber abandonado, y del desafío mayor al que se enfrenta: la batalla despiadada y sin tregua con un pez gigantesco en las aguas del golfo. Escrito en 1952 por encargo de la revista Life, este relato lo confirmó como uno de los escritores más significativos del siglo XX. La presente edición escolar incluye material didáctico a cargo de Maribel Cruzado.",
+    "imagen": "https://m.media-amazon.com/images/I/41swIuiN1DL.jpg"
+  },
+  {
+    "title": "En un lugar solitario",
+    "author": "Dorothy B. Hughes",
+    "summary": "Los Ángeles de finales de los años cuarenta es una ciudad de promesas y prosperidad, excepto para el piloto de aviones de combate dix Steele, que vive su vida como un oasis de tedio en comparación con «la sensación de poder, euforia y libertad que le produce surcar los cielos en solitario». Steele pasa las noches merodeando entre paradas de autobuses vacías, playas en penumbra y cines cerrados, en busca de mujeres jóvenes y solitarias. Apenas tiene dinero y no ve ninguna salida a sus frustraciones. ¿Dónde está el sueño americano? Su vida da un giro inesperado cuando se encuentra con su viejo compañero del ejército, brub, que trabaja para la policía de los Ángeles y que va tras la pista de un estrangulador de mujeres que lleva meses sembrando el terror en la ciudad.",
+    "imagen": "https://m.media-amazon.com/images/I/4166QhjLgeL.jpg"
+  },
+  {
+    "title": "Estoy pensando en dejarlo",
+    "author": "Iain Reid",
+    "summary": "LA NOVELA EN LA QUE SE BASA LA PELÍCULA DIRIGIDA POR CHARLIE KAUFMAN Tendrás miedo, pero no sabrás por qué... «Estoy pensando en dejarlo». Una vez que llega este pensamiento, se queda. Está presente siempre. Siempre. Jake y yo tenemos una conexión de verdad, un apego raro, intenso. ¿Cuánto llevamos...? ¿Un mes? Me siento muy atraída hacia él, aunque en realidad no sea precisamente guapo. Voy a conocer a sus padres por primera vez, al mismo tiempo que estoy pensando dejarlo. Jake dijo en una ocasión que «A veces un pensamiento está más cerca de la verdad, de la realidad, que una acción. Se puede decir cualquier cosa, se puede hacer cualquier cosa, pero no se puede fingir un pensamiento». Y lo que estoy pensando es que no quiero estar aquí. Estoy pensando en dejarlo.",
+    "imagen": "https://m.media-amazon.com/images/I/41BLRzzW5yL.jpg"
+  },
+  {
+    "title": "Fariña",
+    "author": "Nacho Carretero",
+    "summary": "Coca, farlopa, perico, merca, Fariña.Nunca Galicia comercializó un producto con tanto éxito. Aunque ahora parezca una pesadilla lejana, en los años 90 el 80 por ciento de la cocaína desembarcaba en Europa por las costas gallegas. A través de testimonios directos de capos, pilotos de planeadoras, arrepentidos, jueces, policías, periodistas y madres de toxicómanos, Nacho Carretero retrata con minuciosidad este paisaje criminal. Fariña incluye, además, un repaso inédito por los clanes que siguen operando hoy en día.",
+    "imagen": "https://m.media-amazon.com/images/I/51BWmqx9ApL.jpg"
+  },
+  {
+    "title": "Gambito de dama",
+    "author": "Walter Tevis",
+    "summary": "La serie de hoy. El libro del momento. El personaje de tu vida.",
+    "imagen": "https://m.media-amazon.com/images/I/41bOO665p6L.jpg"
+  },
+  {
+    "title": "Gomorra",
+    "author": "Roberto Saviano",
+    "summary": "Hace diez años, la publicación de Gomorra conmocionó al mundo y cambió para siempre la vida de Roberto Saviano. Una década más tarde, Debate relanza el libro incluyendo un nuevo prólogo conmemorativo del autor.",
+    "imagen": "https://m.media-amazon.com/images/I/41XTa0IfuOL.jpg"
+  },
+  {
+    "title": "Gorrión Rojo",
+    "author": "Jason Matthews",
+    "summary": "La oficial Dominika Egorova es un «gorrión», una especie de cortesana del espionaje, de la inteligencia de la Rusia postsoviética que deberá operar contra Nathaniel Nash, un joven y ambicioso agente de la CIA entrenado para infiltrarse en la inteligencia rusa. Pero ambos se enamorarán y pondrán en peligro sus carreras y la seguridad del topo más valioso de América. Buscando venganza contra sus desalmados jefes, Dominika será reclutada por la CIA y entrará en un perverso juego que desembocará en un clímax electrizante.",
+    "imagen": "https://m.media-amazon.com/images/I/41D+9-oPh7L.jpg"
+  },
+  {
+    "title": "Guerra mundial Z",
+    "author": "Max Brooks",
+    "summary": "La crónica de cómo la humanidad se enfrentó a la peor amenaza jamás vista.",
+    "imagen": "https://m.media-amazon.com/images/I/51gFtTKZWXL.jpg"
+  },
+  {
+    "title": "Hellraiser",
+    "author": "Clive Barker",
+    "summary": "En esta nueva versión al español de Hellraiser, que ahora publicamos con su título original, El corazón condenado, los lectores podrán acercarse a esta ya clásica novela de terror con una perspectiva nueva. Nominada como la mejor novela del año en el Reino Unido, treinta años después se ha convertido en una obra de culto tras la primera versión cinematográfica que se hizo de ella en 1987. Clive Barker aborda en sus páginas cuestiones cruciales como el amor y la desesperación, el deseo, la muerte y la sangre, mediante metáforas sugerentes, reflejando el hedonismo desenfrenado hasta límites trascendentes.",
+    "imagen": "https://m.media-amazon.com/images/I/41Q3GZSwUKL.jpg"
+  },
+  {
+    "title": "Historias de miedo para contar en la oscuridad",
+    "author": "Alvin Schwartz",
+    "summary": "Por primera vez, esta icónica antología de cuentos de terror se reúne en un solo volumen que recoge las historias publicadas en los libros Historias de miedo para contar en la oscuridad, Más historias de miedo para contar en la oscuridad e Historias de miedo para contar en la oscuridad 3. El folclorista Alvin Schwartz nos ofrece algunas de las historias más inquietantes de horror, venganza y eventos sobrenaturales de todos los tiempos. Junto a las ilustraciones de Brett Helquist, estos relatos han sido durante años fuente de inspiración en la obra de Guillermo del Toro, quien por fin ha logrado llevarlos a la gran pantalla en una deslumbrante superproducción.",
+    "imagen": "https://m.media-amazon.com/images/I/41joXVYIL9L.jpg"
+  },
+  {
+    "title": "Infiltrado En El KKKlan",
+    "author": "Ron Stallworth",
+    "summary": "En 1978, cuando Ron Stallworth (el primer detective negro del Departamento de Policía de Colorado Springs) encontró un anuncio clasificado en el periódico local pidiendo a todos los interesados en unirse al Ku Klux Klan que se pusieran en contacto a través de un apartado de correos, hizo su trabajo y respondió con interés, usando su nombre real, pero haciéndose pasar por un hombre blanco. Imaginaba que recibiría algunos folletos y revistas por correo, y aprendería un poco más sobre una creciente amenaza terrorista en su comunidad. Pero unas semanas más tarde sonó el teléfono y la persona al otro lado le preguntó si le gustaría unirse a la causa supremacista. Stallworth contestó afirmativamente, arrancando así una de las investigaciones encubiertas más audaces e increíbles de la historia.",
+    "imagen": "https://m.media-amazon.com/images/I/41JlGJaPCvL.jpg"
+  },
+  {
+    "title": "Jonathan Strange y el Sr. Norre",
+    "author": "Susanna Clarke",
+    "summary": "Una de las novelas más brillantes y originales que han aparecido en el panorama anglosajón en los últimos tiempos.",
+    "imagen": "https://m.media-amazon.com/images/I/51-dxjXBXVL.jpg"
+  },
+  {
+    "title": "La banda de los niños",
+    "author": "Roberto Saviano",
+    "summary": "Nápoles, hoy, es una ciudad bella y terrible: es el reino de la camorra, y los chicos que crecen allí lo hacen bajo su influjo. Una pandilla formada por diez de ellos se lanza a la conquista de la ciudad: provienen de familias normales, les gusta lucir calzado de marca y tatuarse el símbolo de su banda.",
+    "imagen": "https://m.media-amazon.com/images/I/41COLRsjGqL.jpg"
+  },
+  {
+    "title": "La Casa De Los Espíritus",
+    "author": "Isabel Allende",
+    "summary": "Han transcurrido más de veinticinco años desde la publicación de LA CASA DE LOS ESPÍRITUS escrita por Isabel Allende (1942), una casi desconocida chilena exiliada en Caracas que, para «sacarse del alma los fantasmas», tomó la pluma en enero de 1981 y no paró hasta enhebrar más de quinientas páginas, como un exorcismo. Después comenzó la peregrinación por las editoriales del lugar, que la rechazaron, para finalmente lanzarse con éxito en España, de donde saltó a Europa e Hispanoamérica. En ese proceso de recepción literaria llega por fin al Chile de Pinochet en el que se cuela de contrabando burlando la censura. A partir de ahí explota el «fenómeno Allende»: un inmenso éxito de ventas, traducciones al alemán, ruso, japonés... y la versión cinematográfica en 1993. La clave de este éxito radica en la extraordinaria capacidad de narrar de Isabel Allende, inventora de una «comedia humana» al estilo de Balzac.",
+    "imagen": "https://m.media-amazon.com/images/I/41ZU3vRiWuL.jpg"
+  },
+  {
+    "title": "La chica danesa",
+    "author": "David Ebershoff",
+    "summary": "Copenhague, en 1925. Greta y Einar son una pareja de jóvenes pintores. Ella es conocida, sobre todo, por sus delicados, sugestivos retratos de mujeres. Pero aquella tarde, la modelo no ha venido. Y Greta le pregunta a Einar si por una vez, para que ella pueda terminar la parte de abajo de un cuadro, él se pondría un par de medias de seda, se calzaría unos zapatos de tacón, acaso también un vestido que le permitiera acabar de pintar los pliegues de la falda. Einar acepta, y el instante en que la seda del vestido se desliza por su cuerpo supone una revelación, el momento de la sensación más verdadera, como cuando se sumerge en el mar en verano. Pero el océano de esta zambullida, que ya no tendrá vuelta atrás, es un mundo de sueños, el sueño por ser Otro.",
+    "imagen": "https://m.media-amazon.com/images/I/41CfwiZ9RKL.jpg"
+  },
+  {
+    "title": "La Dalia Negra",
+    "author": "James Ellroy",
+    "summary": "La Dalia Negra, obra maestra del perro diabólico de las letras norteamericanas, en edición definitiva, con una traducción actualizada y un epílogo inédito del autor.",
+    "imagen": "https://m.media-amazon.com/images/I/41DjdNt-SiL.jpg"
+  },
+  {
+    "title": "La semilla del diablo",
+    "author": "Ira Levin",
+    "summary": "Rosemary Woodhouse y su marido, Guy, un actor poco reconocido que lucha por abrirse camino en su carrera, se mudan a un edificio de apartamentos neoyorquino, el Bramford, signado por una fama ominosa y habitado por ancianos. Roman y Minnie Castavet, vecinos de los Woodhouse, acuden a darles la bienvenida e intentan, por todos los medios, establecer relación con ellos. Rosemary se muestra renuente a frecuentarlos, no solo porque los considera extraños sino también por los misteriosos ruidos procedentes de su apartamento. Guy, sin embargo, parece sentirse encantado con los Castavet.",
+    "imagen": "https://m.media-amazon.com/images/I/41Jw5nf8T9L.jpg"
+  },
+  {
+    "title": "Las sandalias del pescador",
+    "author": "Morris West",
+    "summary": "La gran novela del Vaticano, que anticipó en más de una década la asunción de un papa eslavo. El Papa ha muerto. El mundo vive una época turbulenta: la amenazada de una guerra total se cierne sobre la humanidad.",
+    "imagen": "https://m.media-amazon.com/images/I/518VqLU7l6L.jpg"
+  },
+  {
+    "title": "Lolita",
+    "author": "Vladimir Nabokov",
+    "summary": "La historia de la obsesión de Humbert Humbert, un profesor cuarentón, por la doceañera Lolita es una extraordinaria novela de amor en la que intervienen dos componentes explosivos: la atracción «perversa» por las nínfulas y el incesto. Un itinerario a través de la locura y la muerte, que desemboca en una estilizadísima violencia, narrado, a la vez con autoironía y lirismo desenfrenado, por el propio Humbert Humbert. Lolita es también un retrato ácido y visionario de los Estados Unidos, de los horrores suburbanos y de la cultura del plástico y del motel. En resumen, una exhibición deslumbrante de talento y humor a cargo de un escritor que confesó que le hubiera encantado filmar los picnics de Lewis Carrol.",
+    "imagen": "https://m.media-amazon.com/images/I/41G65MIoKOL.jpg"
+  },
+  {
+    "title": "Los Goonies",
+    "author": "James Kahn",
+    "summary": "Los Goonies buscan un tesoro oculto y lo que encuentran es ¡un montón de problemas! Es verano en el pequeño puerto marítimo de Astoria. Los Goonies están inquietos: una gran constructora amenaza con apropiarse del pueblo. Pero tras encontrar un viejo mapa pirata, el grupo sale a buscar el tesoro que puede salvar a todo el barrio. No cuentan con los esqueletos armados, los pasadizos subterráneos llenos de trampas y un asesino en busca y captura. Y todos ellos desean acabar con los Goonies. Juraron apoyarse contra viento y marea. Por suerte para ellos, porque está a punto de iniciar se la aventura más increíble de sus vidas. Ahora, ¡en una edición con cubierta metalizada!",
+    "imagen": "https://m.media-amazon.com/images/I/51egAuZqd+L.jpg"
+  },
+  {
+    "title": "No confíes en nadie",
+    "author": "S. J. Watson",
+    "summary": "Christine es incapaz de recordar. Debido a un terrible accidente, cada mañana al despertar ha olvidado dónde está, por qué está allí y quién es el hombre que duerme a su lado. Ni tan siquiera se reconoce en la imagen que le devuelve el espejo.",
+    "imagen": "https://m.media-amazon.com/images/I/41ZV1f1rklL.jpg"
+  },
+  {
+    "title": "No es país para viejos",
+    "author": "Cormac McCarthy",
+    "summary": "El cazador y veterano de Vietnam Llewelyn Moss descubre por casualidad la sangrienta escena de una carnicería entre narcos en algún lugar de la frontera entre Texas y México. Entre los cuerpos y los paquetes de heroína, descubre también algo más de dos millones de dólares. A partir de este momento comienza la violenta carrera de Moss por escapar de los que quieren darle caza: Wells, ex agente de las Fuerzas Especiales contratado por un poderoso cartel; Anton Chigurh, una implacable máquina de matar, para quien recuperar el dinero de sus jefes es apenas la excusa para descargar una y otra vez su arma y poner en práctica su máxima: no dejar nunca testigos, y un sheriff veterano de la segunda guerra mundial que añora los viejos buenos tiempos y esconde un doloroso secreto que lo mantiene vivo.",
+    "imagen": "https://m.media-amazon.com/images/I/51zepQP303L.jpg"
+  },
+  {
+    "title": "No hay bestia tan feroz",
+    "author": "Edward Bunker",
+    "summary": "Tras ocho años entre rejas, Max Dembo vuelve a Los Ángeles con sesenta y cinco dólares en el bolsillo, un traje pasado de moda y la intención de reinsertarse en la sociedad. No es tarea fácil para quien, en su corta vida, no ha conocido otra cosa que el crimen y cuenta solo con la improbable ayuda de un rígido y prejuicioso agente de la condicional. Descreído de sus posibilidades de éxito, abrumado por los fantasmas de su vida anterior, Dembo se verá en poco tiempo arrojado a una encrucijada de la que su instinto criminal podría salir reforzado. Trepidante y profunda, de un verismo difícilmente igualable, No hay bestia tan feroz supuso el debut literario de Edward Bunker, delincuente convicto y una de las mayores referencias en literatura criminal norteamericana.",
+    "imagen": "https://m.media-amazon.com/images/I/41qqhAm9+tL.jpg"
+  },
+  {
+    "title": "Orígenes secretos",
+    "author": "David Galán Galindo",
+    "summary": "En Madrid se están produciendo una serie de asesinatos crueles y extraños. Cosme y David son los policías encargados de la investigación, pero necesitarán la ayuda del entrañable friki Jorge Elías para comprender a qué se están enfrentando. Con sus ingentes conocimientos sobre el mundo de los cómics, es capaz de ver los hilos que relacionan a todos los crímenes e interpretar las pistas que el asesino va dejando. Planeta K, su tienda de cómics, se convertirá en el cuartel general donde un improbable equipo, formado por David, Jorge Elías y Patri, una policía amante del cosplay, planifica sus movimientos en busca del asesino por un Madrid más vivo y oscuro que nunca.",
+    "imagen": "https://m.media-amazon.com/images/I/51xfe8gjVfL.jpg"
+  },
+  {
+    "title": "Patria",
+    "author": "Fernando Aramburu",
+    "summary": "El día en que ETA anuncia el abandono de las armas, Bittori se dirige al cementerio para contarle a la tumba de su marido el Txato, asesinado por los terroristas, que ha decidido volver a la casa donde vivieron. ¿Podrá convivir con quienes la acosaron antes y después del atentado que trastocó su vida y la de su familia? ¿Podrá saber quién fue el encapuchado que un día lluvioso mató a su marido, cuando volvía de su empresa de transportes? Por más que llegue a escondidas, la presencia de Bittori alterará la falsa tranquilidad del pueblo, sobre todo de su vecina Miren, amiga íntima en otro tiempo, y madre de Joxe Mari, un terrorista encarcelado y sospechoso de los peores temores de Bittori. ¿Qué pasó entre esas dos mujeres? ¿Qué ha envenenado la vida de sus hijos y sus maridos tan unidos en el pasado?",
+    "imagen": "https://m.media-amazon.com/images/I/41waDxSmE2L.jpg"
+  },
+  {
+    "title": "Pedro Páramo",
+    "author": "Juan Rulfo",
+    "summary": "Cuando al final de la década de los sesenta la narrativa hispanoamericana alcanzó un prestigio mundial, se volvió la vista atrás en busca de sus clásicos. La figura gigantesca de Rulfo destacó inmediatamente. En 1955 aparece Pedro Páramo. Novela gestada largamente por un escritor con fama de poco prolífico y que aunó la propia tradición narrativa hispanoamericana con los principales renovadores de la occidental: Joyce, Faulkner, Woolf... Novela rica, apasionante como pocas, que arrastra al lector del desconcierto a la sugestión. Esta edición ofrece el texto definitivo de Pedro Páramo, corregido por la Fundación Juan Rulfo, incluye una nueva Introducción, varios Apéndices sobre variantes, cronología de la historia, anotaciones a los fragmentos y aclaraciones de Rulfo y un nuevo aparato de notas.",
+    "imagen": "https://m.media-amazon.com/images/I/411weRMuAiL.jpg"
+  },
+  {
+    "title": "Poder absoluto",
+    "author": "David Baldacci",
+    "summary": "Después de Día cero y Los olvidados, llega el mejor Baldacci con su tercer thriller protagonizado por John Puller, su héroe más emblemático, ante la misión más difícil de su carrera.",
+    "imagen": "https://m.media-amazon.com/images/I/51pCfgEUJlL.jpg"
+  },
+  {
+    "title": "Ready Player One",
+    "author": "Ernest Cline",
+    "summary": "La secuela de Ready Player One, el best seller mundial que Steven Spielberg adaptó al cine.",
+    "imagen": "https://m.media-amazon.com/images/I/51xewH-UcbL.jpg"
+  },
+  {
+    "title": "Rebeca",
+    "author": "Daphne Du Maurier",
+    "summary": "Nadie que conozca la película basada en esta novela podrá olvidar la voz en off que recita la frase inicial de la obra más lograda de Daphne du Maurier: Rebeca. Así comienzan los recuerdos de la segunda señora De Winter, que la transportan de nuevo a la aislada y gris mansión situada en la húmeda y ventosa costa de Cornualles. Con un marido al que apenas conoce, la joven esposa llega a este inmenso predio para ser inexorablemente ahogada por la fantasmal presencia de la primera señora De Winter, la hermosa Rebeca, muerta pero nunca olvidada. Su habitación permanece intacta, sus vestidos listos para ser lucidos y su sirvienta, la siniestra señora Danvers, aún le profesa una devoción malsana.",
+    "imagen": "https://m.media-amazon.com/images/I/41nfts49VDL.jpg"
+  },
+  {
+    "title": "Salvajes",
+    "author": "Don Winslow",
+    "summary": "Ben y Chon son dos tíos que saben disfrutar de la vida: les encanta el sexo, el voleibol, la cerveza y las chicas. Ophelia, más conocida como O., tiene fama de alcanzar orgasmos muy escandalosos (por eso sus amigas a veces la llaman Multi O.) y está loca por Ben y Chon. En fin, que se acuesta con ambos. Pero lo que de verdad hace diferentes a Ben y Chon de los demás es que producen la mejor maría del mundo. ¿Algún problema? Ninguno. Bueno, sí, uno: el cartel de Baja. La esencia del narcotráfico mexicano. Que, además, está compuesto por unos tipos con muy malas pulgas: o les das lo que desean o te cortan la cabeza. Son auténticos salvajes. Y ahora, vaya por Dios, tienen secuestrada a O. porque quieren la hierba de Ben y Chon. ¿Qué hacer? Solo hay tres salidas",
+    "imagen": "https://m.media-amazon.com/images/I/517B661N2mL.jpg"
+  },
+  {
+    "title": "Se lo llevaron",
+    "author": "Loung Ung",
+    "summary": "Loung Ung nació en 1970, durante la sangrienta guerra civil de Camboya, que le costó la vida a más de dos millones de hombres, mujeres y niños. Solo tenía cinco años cuando los Jemeres Rojos se adueñaron del país. En 1978, los padres y dos hermanos de Loung Ung fueron asesinados, y la pequeña fue entrenada como niña soldado durante dos años. Consiguió huir y adquirió el estatus de refugiada política en Estados Unidos. Desde entonces lucha junto a su hermano por las libertades de los ciudadanos de Camboya. En 1997 la organización de la que es portavoz, Campaña de Minas Antipersona, fue galardonada con el Premio Nobel de la Paz. Con Se lo llevaron ha conseguido plasmar una experiencia única que ha dado la vuelta al mundo.",
+    "imagen": "https://m.media-amazon.com/images/I/51xvy6brYgL.jpg"
+  },
+  {
+    "title": "Shutter Island",
+    "author": "Dennis Lehane",
+    "summary": "Shutter Island está cerca de Boston. Es una pequeña isla en la que tan solo destaca el Hospital Ashecliffe, un centro penitenciario para enfermos mentales. El agente federal Teddy Daniels y su compañero, Chuck Aule, acaban de desembarcar. Un peligroso asesino se ha escapado pese a las férreas medidas de seguridad. No podrá salir de la diminuta isla, así que Daniels tan solo mira el reloj. Una rutina más. Lehane nos condena a correr y no mirar atrás, como hace Teddy Daniels, una vez deduce que la única y simple razón de que haya sido destinado a Shutter Island es: que no vuelva a salir. Pero ¿por qué a él?",
+    "imagen": "https://m.media-amazon.com/images/I/51SoFvQnGdL.jpg"
+  },
+  {
+    "title": "Soy leyenda",
+    "author": "Richard Matheson",
+    "summary": "Robert Neville es el único superviviente de una guerra bacteriológica que ha asolado el planeta y convertido al resto de la humanidad en vampiros. Su vida se ha reducido a asesinar el máximo número posible de estos seres sanguinarios durante el día, y a soportar su asedio cada noche. Para ellos, el auténtico monstruo es este hombre que lucha por subsistir en un nuevo orden establecido.",
+    "imagen": "https://m.media-amazon.com/images/I/51ZKrEKDgRL.jpg"
+  },
+  {
+    "title": "Tormenta de espadas, de George R.R. Martin",
+    "author": "",
+    "summary": "Canción de hielo y fuego: Libro tercero",
+    "imagen": "https://m.media-amazon.com/images/I/51CZ-Zie4YL.jpg"
+  },
+  {
+    "title": "Talentos ocultos (Figuras ocultas)",
+    "author": "Margot Lee Shetterly",
+    "summary": "Esta es la verdadera historia, nunca antes contada, de las mujeres afroamericanas de la NASA expertas en matemáticas, que desempeñaron un papel crucial en el programa espacial de Estados Unidos, y cuyas contribuciones han permanecido anónimas… hasta ahora.",
+    "imagen": "https://m.media-amazon.com/images/I/51ThmOIpSpL.jpg"
+  },
+  {
+    "title": "The Expanse",
+    "author": "James S.A. Corey",
+    "summary": "La novela en que se basa la primera temporada de la serie de TV de Syfy The Expanse.",
+    "imagen": "https://m.media-amazon.com/images/I/51eWeCpbjXL.jpg"
+  },
+  {
+    "title": "Trilogía La Materia oscura",
+    "author": "Philip Pullman",
+    "summary": "AHORA UNA SERIE DE TELEVISIÓN EN HBO.",
+    "imagen": "https://m.media-amazon.com/images/I/51F5eLa9ufL.jpg"
+  },
+  {
+    "title": "Trópico de Cáncer",
+    "author": "Henry Miller",
+    "summary": "Esta obra narra las peripecias de un álter ego dl autor en Paris en los años previos a la segund guerra mundial. El equilibio entre las peripecis de una vida bohemia (marcada por las experiencas sexuales y el desenfreno etílico) y las refleiones acerca de la situación del ser humano indiidual en un mundo en crisis es uno de los aspects que lo convirtió inmediatamente en una de las ovelas más apreciadas por la crítica literaria d su época, y el hecho de que en Estados Unidos fera prohibida por lo explícita",
+    "imagen": "https://m.media-amazon.com/images/I/31BCOXlAS3L.jpg"
+  },
+  {
+    "title": "Un final feliz (El lado bueno de las cosas)",
+    "author": "Matthew Quick",
+    "summary": "La conmovedora y divertida historia de un hombre que recupera su memoria para intentar recuperar a su ex mujer.",
+    "imagen": "https://m.media-amazon.com/images/I/51HEY71Da1L.jpg"
+  },
+  {
+    "title": "Ventajas de viajar en tren",
+    "author": "Antonio Orejudo",
+    "summary": "Después de dejar a su marido ingresado en un hospital psiquiátrico en el norte, una mujer regresa en tren a Madrid. En el vagón, un desconocido, para amenizar el viaje, le pregunta de pronto: «¿Le apetece que le cuente mi vida?». Se trata de Ángel Sanagustín, psiquiatra que trabaja en la misma clínica y estudioso de los trastornos de la personalidad a través de los relatos y los escritos de los pacientes. Esos textos son los que guarda en una carpeta roja que lleva consigo. Hay casos de esquizofrenia, de dobles vidas, de paranoicos convencidos del control gubernamental a los ciudadanos mediante la clasificación de sus desperdicios. Cuando el psiquiatra baja un momento en una de las paradas en busca de un refresco y pierde el tren, la mujer tiene en sus manos la carpeta con los escritos. Irresistiblemente, querremos leerlos con ella.",
+    "imagen": "https://m.media-amazon.com/images/I/51HV7XxhWdL.jpg"
+  },
+  {
+    "title": "Yo, robot",
+    "author": "Isaac Asimov",
+    "summary": "Las paradojas que se plantean en estos relatos futuristas no son sólo ingeniosos ejercicios intelectuales sino sobre todo una indagación sobre la situación del hombre actual en relación con los avances tecnológicos y con la experiencia del tiempo.",
+    "imagen": "https://m.media-amazon.com/images/I/51FCCpbsIwL.jpg"
+  }
+]
