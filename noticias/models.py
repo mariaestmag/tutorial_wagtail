@@ -20,7 +20,7 @@ class NewsIndexPage(Page):
 
     def get_context(self, request):
         context = super().get_context(request)
-        news = self.get_children().live().order_by('-last_published_at')
+        news = self.get_children().live().order_by('-date')[:5]
         context['news'] = news
         
         return context

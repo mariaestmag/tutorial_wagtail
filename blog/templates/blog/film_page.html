@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-blogpage{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.date }}</p>
+
+    <!-- Categorías-->
+    {% with categories=page.categories.all %}
+    {% if categories %}
+    <h6>Publicado en :</h6>
+    <ul>
+        {% for category in categories %}
+        <li style="display: inline">
+            {% image category.icon fill-32x32 style="vertical-align: middle" %}
+            {{ category.name }}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    <!--/ Categorías-->
+    <hr>
+    <div class="intro">{{ page.intro }}</div>
+
+    {{ page.body|richtext }}
+
+      <!-- Películas-->
+      {% with peliculas=page.peliculas.all %}
+      {% if peliculas %}
+      <ul>
+          {% for pelicula in peliculas %}
+          <li style="display: inline">
+              {{ pelicula.title }}
+          </li>
+          {% endfor %}
+      </ul>
+      {% endif %}
+      {% endwith %}
+      <!--/ Películas-->
+
+
+    <hr>
+    <!--Tags-->
+    {% if page.tags.all.count %}
+    <div class="tags">
+        <h3>Tags</h3>
+        {% for tag in page.tags.all %}
+        <a href="{% slugurl 'tags' %}?tag={{ tag }}"><button type="button">{{ tag }}</button></a>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <!--/Tags-->
+
+    <p><a href="{{ page.get_parent.url }}">Volver al blog</a></p>
+</div>
+
+{% endblock %}

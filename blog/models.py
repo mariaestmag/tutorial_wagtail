@@ -1,18 +1,17 @@
 from atexit import register
 from django.db import models
 from django import forms
-
 from modelcluster.fields import ParentalKey, ParentalManyToManyField
 from modelcluster.contrib.taggit import ClusterTaggableManager
 from taggit.models import TaggedItemBase
-
 from wagtail.core.models import Page, Orderable
 from wagtail.core.fields import RichTextField
 from wagtail.admin.edit_handlers import FieldPanel, InlinePanel,  MultiFieldPanel
 from wagtail.images.edit_handlers import ImageChooserPanel
+from wagtail.snippets.edit_handlers import SnippetChooserPanel
 from wagtail.snippets.models import register_snippet
-
 from wagtail.search import index
+from pelis.models import Pelicula
 
 class BlogIndexPage(Page):
     max_count = 1
@@ -79,6 +78,27 @@ class BlogPage(Page):
         InlinePanel('gallery_images', 
             label="Galería de imágenes"),
     ]
+
+class FilmPage(BlogPage):
+    titulo = models.CharField("Introducción", max_length=250)
+    cuerpo = RichTextField(blank=True)
+    pelis = ParentalManyToManyField('pelis.Pelicula', blank=True)
+
+    search_fields = Page.search_fields + [
+        index.SearchField('titulo'),
+        index.SearchField('cuerpo'),
+    ]
+
+    content_panels = Page.content_panels + [
+        MultiFieldPanel([
+            FieldPanel('titulo'),
+            FieldPanel('cuerpo'),
+            FieldPanel('pelis', widget=forms.CheckboxSelectMultiple),
+
+            ],
+            heading='Información'
+        ),
+    ] 
 
 class BlogPageGalleryImage(Orderable):
     page = ParentalKey(BlogPage, 

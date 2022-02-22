@@ -27,6 +27,7 @@ class Genre(models.Model):
         verbose_name = 'Género'
         verbose_name_plural = 'Géneros'
 
+@register_snippet
 class Pelicula(models.Model):
     title = models.CharField('título', max_length=250)
     slug = models.SlugField(blank=True)
