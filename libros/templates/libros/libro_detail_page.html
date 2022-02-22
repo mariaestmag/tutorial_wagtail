@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-librodetailpage{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ page.title }}</h1>
+
+    <div class="intro">{{ page.intro }}</div>
+
+    {{libro}}
+
+    <table>
+
+        {% for libro in libros %}
+        <tr>
+            <td>{{libro.title}}</td>
+            <td>{{libro.author}}</td>
+            <td>{{libro.summary}}</td>
+            <td>{{libro.imagen}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    <p><a href="{{ page.get_parent.url }}">Volver al listado de libros</a></p>
+
+</div>
+
+{% endblock %}
