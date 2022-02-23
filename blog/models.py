@@ -16,6 +16,8 @@ from pelis.models import Pelicula
 class BlogIndexPage(Page):
     max_count = 1
 
+    subpage_types = ['blog.BlogPage','blog.FilmPage','blog.TravelPage','blog.MusicPage']
+
     introduccion = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
@@ -95,6 +97,42 @@ class FilmPage(BlogPage):
             FieldPanel('cuerpo'),
             FieldPanel('pelis', widget=forms.CheckboxSelectMultiple),
 
+            ],
+            heading='Información'
+        ),
+    ] 
+
+class TravelPage(BlogPage):
+    titulo = models.CharField("Introducción", max_length=250)
+    cuerpo = RichTextField(blank=True)
+
+    search_fields = Page.search_fields + [
+        index.SearchField('titulo'),
+        index.SearchField('cuerpo'),
+    ]
+
+    content_panels = Page.content_panels + [
+        MultiFieldPanel([
+            FieldPanel('titulo'),
+            FieldPanel('cuerpo'),
+            ],
+            heading='Información'
+        ),
+    ] 
+
+class MusicPage(BlogPage):
+    titulo = models.CharField("Introducción", max_length=250)
+    cuerpo = RichTextField(blank=True)
+
+    search_fields = Page.search_fields + [
+        index.SearchField('titulo'),
+        index.SearchField('cuerpo'),
+    ]
+
+    content_panels = Page.content_panels + [
+        MultiFieldPanel([
+            FieldPanel('titulo'),
+            FieldPanel('cuerpo'),
             ],
             heading='Información'
         ),
