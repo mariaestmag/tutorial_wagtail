@@ -1,4 +1,4 @@
-from atexit import register
+from ctypes.wintypes import POINT
 from django.db import models
 from django import forms
 from modelcluster.fields import ParentalKey, ParentalManyToManyField
@@ -6,12 +6,14 @@ from modelcluster.contrib.taggit import ClusterTaggableManager
 from taggit.models import TaggedItemBase
 from wagtail.core.models import Page, Orderable
 from wagtail.core.fields import RichTextField
-from wagtail.admin.edit_handlers import FieldPanel, InlinePanel,  MultiFieldPanel
+from wagtail.admin.edit_handlers import FieldPanel, InlinePanel,  MultiFieldPanel, StreamFieldPanel
 from wagtail.images.edit_handlers import ImageChooserPanel
-from wagtail.snippets.edit_handlers import SnippetChooserPanel
 from wagtail.snippets.models import register_snippet
 from wagtail.search import index
-from pelis.models import Pelicula
+from wagtailgeowidget.edit_handlers import LeafletPanel
+from djgeojson.fields import PointField
+
+
 
 class BlogIndexPage(Page):
     max_count = 1
@@ -89,36 +91,38 @@ class FilmPage(BlogPage):
     search_fields = Page.search_fields + [
         index.SearchField('titulo'),
         index.SearchField('cuerpo'),
+        
     ]
 
     content_panels = Page.content_panels + [
         MultiFieldPanel([
             FieldPanel('titulo'),
             FieldPanel('cuerpo'),
-            FieldPanel('pelis', widget=forms.CheckboxSelectMultiple),
-
+            FieldPanel('pelis', widget=forms.Select),
             ],
             heading='Información'
         ),
     ] 
-
+  
 class TravelPage(BlogPage):
-    titulo = models.CharField("Introducción", max_length=250)
-    cuerpo = RichTextField(blank=True)
+    
+    location = models.CharField(max_length=250, blank=True, null=True)  
 
     search_fields = Page.search_fields + [
-        index.SearchField('titulo'),
-        index.SearchField('cuerpo'),
+        index.SearchField('intro'),
+        index.SearchField('body'),
     ]
 
     content_panels = Page.content_panels + [
         MultiFieldPanel([
-            FieldPanel('titulo'),
-            FieldPanel('cuerpo'),
+            FieldPanel('intro'),
+            FieldPanel('body'),
+            FieldPanel('date'),
+            LeafletPanel('location'),
             ],
             heading='Información'
         ),
-    ] 
+    ]
 
 class MusicPage(BlogPage):
     titulo = models.CharField("Introducción", max_length=250)

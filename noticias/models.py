@@ -9,6 +9,8 @@ from wagtail.images.edit_handlers import ImageChooserPanel
 
 from wagtail.search import index
 
+#accordion en BootStrap para las noticias
+
 class NewsIndexPage(Page):
     max_count = 1
 

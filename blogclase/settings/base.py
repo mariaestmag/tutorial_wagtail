@@ -32,7 +32,9 @@ INSTALLED_APPS = [
     'django_extensions',
     'noticias',
     'libros',
-
+    'wagtailgeowidget',
+    'leaflet',
+    'djgeojson',
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
     'wagtail.embeds',
@@ -45,11 +47,8 @@ INSTALLED_APPS = [
     'wagtail.admin',
     'wagtail.core',
     'wagtailfontawesome',
-    
-
     'modelcluster',
     'taggit',
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -180,4 +179,3 @@ WAGTAILSEARCH_BACKENDS = {
 BASE_URL = 'http://example.com'
 
 DEFAULT_AUTO_FIELD='django.db.models.AutoField' #AÑADIDO
-

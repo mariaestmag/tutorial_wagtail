@@ -1,3 +1,5 @@
+from leaflet.admin import LeafletGeoAdmin
 from django.contrib import admin
+from blog.models import TravelPage
 
-# Register your models here.
+admin.site.register(TravelPage, LeafletGeoAdmin)
