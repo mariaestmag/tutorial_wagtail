@@ -1,5 +1,6 @@
 from ctypes.wintypes import POINT
 from django.db import models
+from libros.models import Libro
 from django import forms
 from modelcluster.fields import ParentalKey, ParentalManyToManyField
 from modelcluster.contrib.taggit import ClusterTaggableManager
@@ -18,7 +19,7 @@ from djgeojson.fields import PointField
 class BlogIndexPage(Page):
     max_count = 1
 
-    subpage_types = ['blog.BlogPage','blog.FilmPage','blog.TravelPage','blog.MusicPage']
+    subpage_types = ['blog.BlogPage','blog.FilmPage','blog.TravelPage','blog.BookPage']
 
     introduccion = RichTextField(blank=True)
 
@@ -90,8 +91,7 @@ class FilmPage(BlogPage):
 
     search_fields = Page.search_fields + [
         index.SearchField('titulo'),
-        index.SearchField('cuerpo'),
-        
+        index.SearchField('cuerpo'), 
     ]
 
     content_panels = Page.content_panels + [
@@ -124,23 +124,32 @@ class TravelPage(BlogPage):
         ),
     ]
 
-class MusicPage(BlogPage):
-    titulo = models.CharField("Introducción", max_length=250)
-    cuerpo = RichTextField(blank=True)
+class BookPage(BlogPage):
+
+    libros = ParentalManyToManyField('libros.Libro', blank=True)
+
 
     search_fields = Page.search_fields + [
-        index.SearchField('titulo'),
-        index.SearchField('cuerpo'),
+        index.SearchField('intro'),
+        index.SearchField('body'),
     ]
 
     content_panels = Page.content_panels + [
         MultiFieldPanel([
-            FieldPanel('titulo'),
-            FieldPanel('cuerpo'),
+            FieldPanel('intro'),
+            FieldPanel('body'),
+            FieldPanel('date'),
+            #FieldPanel('libros', widget=forms.Select),
             ],
             heading='Información'
         ),
-    ] 
+    ]
+
+    def get_context(self, request):
+        libros = Libro.objects.all()
+        context = super().get_context(request)
+        context['libros'] = libros
+        return context
 
 class BlogPageGalleryImage(Orderable):
     page = ParentalKey(BlogPage, 
