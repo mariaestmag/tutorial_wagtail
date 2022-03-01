@@ -9,7 +9,6 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.utils.text import slugify
 
 
-# Create your models here.
 
 ## Page que mostrará el index de las películas
 ## Hereda solo de Home y no descendientes
