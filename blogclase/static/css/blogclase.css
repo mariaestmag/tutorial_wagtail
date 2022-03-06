@@ -2,16 +2,78 @@
     font-family: "Caveat", cursive;
 }
 
-p {
-    color: blue;
-}
-
-footer {
-    border: 1px solid black;
-    background-color: blueviolet;
-}
-
 #mapid {
     height: 200px;
     width: 300px;
 }
+
+.text-special {
+    font-family: "Caveat", cursive;
+  }
+  
+  #main {
+    padding: 10px;
+  }
+  
+  /* Headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .navbar-brand,
+  .navbar-nav,
+  .card-title {
+    font-family: "Caveat", cursive;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #f38181;
+    width: 100%;
+  }
+  
+  .navbar-light img {
+    max-width: 42px;
+    height: auto;
+  }
+  .navbar-light .navbar-brand {
+    font-size: 1.5rem; /* 24px */
+    padding: 0;
+  }
+  .navbar-nav {
+    font-size: 1.4rem;
+  }
+  
+  .navbar-nav ul li {
+    vertical-align: middle;
+  }
+  
+  .navbar-brand {
+    margin-right: 0rem;
+  }
+  
+  .nav-item {
+    font-size: 0.85em;
+    padding: 8px;
+  }
+  
+  span {
+    font-size: larger;
+  }
+  
+  
+  /* Separators */
+  hr {
+    background-image: linear-gradient(90deg, #f38181, transparent);
+    border: 0;
+    height: 1px;
+    margin: 0;
+  }
+
+  /* footer */
+  footer span {
+    font-size: 0.6875rem;
+    color: rgba(255, 255, 255, 0.6);
+  }

@@ -26,6 +26,12 @@ class Genre(models.Model):
         verbose_name = 'Género'
         verbose_name_plural = 'Géneros'
 
+    def get_context(self):
+        context = super().get_context()
+        generos = Genre.objects.all()
+        context['generos'] = generos
+        return context
+
 @register_snippet
 class Pelicula(models.Model):
     title = models.CharField('título', max_length=250)

@@ -23,25 +23,166 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/blogclase.css' %}">
     {% block extra_css %}{% endblock %}
 </head>
+<style>
+    .text-special {
+        font-family: "Caveat", cursive;
+    }
+
+    #mapid {
+        height: 200px;
+        width: 300px;
+    }
+
+    .text-special {
+        font-family: "Caveat", cursive;
+    }
+
+    #main {
+        padding: 10px;
+    }
+
+    /* Headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .navbar-brand,
+    .navbar-nav,
+    .card-title {
+        font-family: "Caveat", cursive;
+    }
+
+    /* Navbar */
+    .navbar {
+        background-color: #f38181;
+        width: 100%;
+    }
+
+    .navbar-light img {
+        max-width: 42px;
+        height: auto;
+    }
+
+    .navbar-light .navbar-brand {
+        font-size: 1.5rem;
+        /* 24px */
+        padding: 0;
+    }
+
+    .navbar-nav {
+        font-size: 1.4rem;
+    }
+
+    .navbar-nav ul li {
+        vertical-align: middle;
+    }
+
+    .navbar-brand {
+        margin-right: 0rem;
+    }
+
+    .nav-item {
+        font-size: 0.85em;
+        padding: 8px;
+    }
+
+    span {
+        font-size: larger;
+    }
+
+    div#navbarSupportedContent {
+        padding-left: 40px;
+    }
+
+
+    /* Separators */
+    hr {
+        background-image: linear-gradient(90deg, #f38181, transparent);
+        border: 0;
+        height: 1px;
+        margin: 0;
+    }
+
+    /* footer */
+    footer span {
+        font-size: 0.6875rem;
+        color: rgba(255, 255, 255, 0.6);
+    }
+</style>
 
 <body class="{% block body_class %}{% endblock %}">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            {% include "navbar.html" %}
-        </nav>
-        {% wagtailuserbar %}
-        {% block content %}{% endblock %} <!--body-->
+    {% wagtailuserbar %}
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
-        <script type="text/javascript" src="{% static 'js/blogclase.js' %}"></script>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-brand">
+        {% include "navbar.html" %}
+    </nav>
+    <div class="container" id="main">
+        <h3 class="display-3 text-center text-lg-left">
+            Blog
+        </h3>
+        <hr class="mb-4">
+        <div class="row align-items-right">
+            <div class="col-lg-10 order-2 order-lg-1 mb-4 mb-lg-0">
+                <h3 class="mt-2">
+                    <!-- Categorías-->
+                    {% with categories=page.categories.all %}
+                    {% for category in categories %}
+                    <li style="display: inline">
+                        {{ category.name }}
+                    </li>
+                    {% endfor %}
+                    {% endwith %}
+                    <!--/ Categorías-->
+                </h3>
+                <p class="lead mt-2">
+                    {% block content %}{% endblock %}
+                </p>
+            </div><!-- /.col -->
+            <div class="col-lg-2 order-1 order-lg-1">
+                <p class="lead mt-2">
+                    tagssss
+                </p>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+
+    <div class="container py-md-4">
+        <h6 class="text-uppercase mt-4">
+            NOTICIAS
+        </h6>
+        <hr class="mb-4">
+
+        <!-- Cards -->
+        <div class="row text-center">
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+                <div class="card border-0">
+                    <img class="card-img-top img-thumbnail" src="img/categorias/playas.jpeg" alt="playas">
+                    <div class="card-body p-0">
+                        <a href="playas.html"
+                            class="card-title btn btn-light btn-block border-0 rounded-0 stretched-link mb-0">
+                            Playas
+                        </a>
+                    </div>
+                </div><!-- /.card -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+        <!-- /Cards on left -->
+
+    </div><!-- /.container -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/blogclase.js' %}"></script>
+
     {% block extra_js %}
     {% endblock %}
 </body>
-<footer>
+<footer class="footer bg-dark mt-auto py-3">
     {% include "footer.html" %}
 </footer>
 

@@ -25,24 +25,26 @@
     {% endwith %}
     <!--/ Categorías-->
     <hr>
+    <!-- Snippet peli-->
+    <div class="row">
+        {% for item in page.lista_pelis.all %}
+        <div class="col-md-3">
+            <h4>Pelicula:</h4>
+            <p>{{ item.pelicula.title }}</p>
+            <p><a href="{{ item.pelicula.link }}">Link a IMDB</a></p>
+
+            {% for genero in item.pelicula.generos.all %}
+            <p>{{ genero }}</p>
+            {% endfor %}
+            <p>{{ item.pelicula.cast }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <!--/ Snippet peli-->
+    <hr>
     <div class="intro">{{ page.intro }}</div>
 
     {{ page.body|richtext }}
-
-      <!-- Películas-->
-      {% with peliculas=page.peliculas.all %}
-      {% if peliculas %}
-      <ul>
-          {% for pelicula in peliculas %}
-          <li style="display: inline">
-              {{ pelicula.title }}
-          </li>
-          {% endfor %}
-      </ul>
-      {% endif %}
-      {% endwith %}
-      <!--/ Películas-->
-
 
     <hr>
     <!--Tags-->

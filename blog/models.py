@@ -1,4 +1,3 @@
-from ctypes.wintypes import POINT
 from django.db import models
 from libros.models import Libro
 from django import forms
@@ -8,6 +7,7 @@ from taggit.models import TaggedItemBase
 from wagtail.core.models import Page, Orderable
 from wagtail.core.fields import RichTextField
 from wagtail.admin.edit_handlers import FieldPanel, InlinePanel,  MultiFieldPanel
+from wagtail.snippets.edit_handlers import SnippetChooserPanel
 from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.snippets.models import register_snippet
 from wagtail.search import index
@@ -85,10 +85,9 @@ class BlogPage(Page):
     ]
 
 
-class FilmPage(BlogPage):
-    # Campos para cuando queramos crear una página sobre películas, hereda campos de BlogPage
-    pelis = ParentalManyToManyField('pelis.Pelicula',blank=True)
 
+class FilmPage(BlogPage):
+    
     # Pasamos campos de BlogPage para su búsqueda
     search_fields = Page.search_fields + [
         index.SearchField('intro'),
@@ -101,12 +100,28 @@ class FilmPage(BlogPage):
             FieldPanel('intro'),
             FieldPanel('body'),
             FieldPanel('date'),
-            FieldPanel('pelis', widget=forms.Select),
+            InlinePanel('lista_pelis')
             ],
             heading='Información'
         ),
     ] 
-  
+
+class PeliculasOrderable(Orderable):
+    #Permite seleccionar pelicula desde Snippets (Fragmentos)
+    page = ParentalKey(FilmPage, 
+        on_delete=models.CASCADE, 
+        related_name='lista_pelis')
+    
+    pelicula = models.ForeignKey(
+        "pelis.Pelicula",
+        on_delete=models.CASCADE, related_name="+"
+    )
+
+    panels = [
+    	# Usamos SnippetChooserPanel porque peli.Pelicula está registrada como tal
+        SnippetChooserPanel("pelicula"),
+    ]
+
 class TravelPage(BlogPage):
     # Campos para cuando queramos crear una página sobre viajes, hereda campos de BlogPage
     location = models.CharField(max_length=250, blank=True, null=True)  
@@ -192,6 +207,12 @@ class BlogCategory(models.Model):
     class Meta:
         verbose_name_plural = 'categorías de blog'
         verbose_name = 'categoría de blog'
+
+    def get_context(self, request):
+        categorias = BlogCategory.objects.all()
+        context = super().get_context(request)
+        context['categorias'] = categorias
+        return context    
     
 @register_snippet
 class FooterText(models.Model):
