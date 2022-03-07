@@ -38,6 +38,7 @@ pickleshare==0.7.5
 Pillow==8.4.0
 platformdirs==2.4.1
 prompt-toolkit==3.0.24
+psycopg2-binary==2.9.3
 ptyprocess==0.7.0
 pure-eval==0.2.1
 Pygments==2.11.2
@@ -54,7 +55,9 @@ traitlets==5.1.1
 typing_extensions==4.0.1
 urllib3==1.26.8
 wagtail==2.15.1
+wagtail-blocks==0.7.2
 wagtailfontawesome==1.2.1
+wagtailgeowidget==6.1.0
 wagtailleafletwidget==1.0.2
 wcwidth==0.2.5
 webencodings==0.5.1
