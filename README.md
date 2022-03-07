@@ -12,6 +12,8 @@ Todo el esqueleto de la web está en el *base.html* que a su vez va incluyendo a
 
 ## **Instalación**
 
+user:mariaestmag pass:password
+
 1) Clona el repositorio o descárgalo directamente:  
    
   ```bash 
