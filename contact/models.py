@@ -18,7 +18,6 @@ from wagtail.contrib.forms.models import (
     AbstractFormField
 )
 
-
 class FormField(AbstractFormField):
     page = ParentalKey(
         'ContactPage',
@@ -26,12 +25,9 @@ class FormField(AbstractFormField):
         related_name='form_fields',
     )
 
-
 class ContactPage(AbstractEmailForm):
 
     template = "contact/contact_page.html"
-    # This is the default path.
-    # If ignored, Wagtail adds _landing.html to your template name
     landing_page_template = "contact/contact_page_landing.html"
 
     intro = RichTextField(blank=True)

@@ -5,23 +5,13 @@
 {% block body_class %}template-blogindexpage{% endblock %}
 
 {% block content %}
-<div class="container">
-    {% with categories=page.categories.all %}
-    {% if categories %}
-    <h1>Post de la categoria {{category.name}}</h1>
-    <hr>
-    {% endif %}
-    {% endwith %}
-    
+<div class="container">    
     {% for blog in blogpages %}
-    <li class="list-group-item">{{blog.title}}</li>
-    <li class="list-group-item">{{blog.categories}}</li>
-
+    <h3>{{blog.title}}</h3>
+    <p>{{blog.body|richtext}}</p>
     {% empty %}
     <p>No hay posts con esa categoría todavía ... </p>
     {% endfor %}
- 
     </ul>
-
 </div>
 {% endblock %}
