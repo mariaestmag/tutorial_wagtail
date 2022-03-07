@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% load wagtailcore_tags %}
+{% load wagtailcore_tags blog_tags static %}
 
 {% block body_class %}template-blogindexpage{% endblock %}
 
@@ -8,7 +8,9 @@
 <div class="container">    
     {% for blog in blogpages %}
     <h3>{{blog.title}}</h3>
+    <p>{{blog.intro}}</p>
     <p>{{blog.body|richtext}}</p>
+    <hr><br>
     {% empty %}
     <p>No hay posts con esa categoría todavía ... </p>
     {% endfor %}

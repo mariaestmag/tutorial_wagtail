@@ -8,8 +8,10 @@ from wagtail.admin.edit_handlers import FieldPanel, MultiFieldPanel, InlinePanel
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.utils.text import slugify
 from wagtail.search import index
+from wagtail.snippets.models import register_snippet
 
 
+@register_snippet
 class Libro(models.Model):
 
     title = models.CharField('título', max_length=250)

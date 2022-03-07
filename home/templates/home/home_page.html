@@ -1,15 +1,30 @@
 {% extends "base.html" %}
 {% load static %}
-{% load wagtailcore_tags %}
+{% load wagtailcore_tags static blog_tags wagtailimages_tags %}
 
 {% block body_class %}template-homepage{% endblock %}
 
-{% block extra_css %}
-
-{% endblock extra_css %}
+{% block extra_css %}{% endblock extra_css %}
 
 {% block content %}
 <div class="container mt-5">
-{{page.body | richtext}}
+    {% for blog in blogpages %}
+    <h2><a href="{% pageurl blog %}">{{ blog.title }}</a></h2>
+    <p class="meta">{{ blog.date }}</p>
+    {{ blog.intro }}
+    {{ blog.body|richtext }}
+
+    <div class="row">
+        {% for item in page.gallery_images.all %}
+        <div class="col-md-3">
+            {% image item.image fill-320x240 %}
+            <p>{{ item.caption }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <br><br>
+    {% empty %}
+    <p>No hay posts todavía ... </p>
+    {% endfor %}
 </div>
-{% endblock content %}
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+{% endblock %}
+
+{% block content %}
+<table id="libros">
+    <thead><tr><th>Título</th><th>Autor</th><th>Sinopsis</th><th>Imagen</th></tr></thead>
+    <tbody>
+    {% for libro in libros %}
+    <tr><td>{{libro.title}}</td><td>{{libro.author}}</td><td>{{libro.summary}}</td><td><img src="{{libro.imagen}}" alt="{{peli.title}}" style="max-height: 200px; max-width: 100px;"></td></tr>
+    {% endfor%}
+    </tbody>
+    </table>
+    
+<p><a href="{{ page.get_parent.url }}">Volver atrás</a></p>
+
+{% endblock %}
+
+{% block extra_js %}
+<script type="text/javascript" src="//cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+
+<script>
+    $(document).ready( function () {
+        $('#libros').DataTable({
+            language: {
+                url: '//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json'
+            }
+        });
+    } );
+    </script>
+{% endblock %}

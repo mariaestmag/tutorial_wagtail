@@ -35,8 +35,6 @@ class NewsPage(Page):
     intro = models.CharField("Introducción", max_length=250)
     summary = RichTextField(blank=True)
     body = RichTextField(blank=True)
-    #tags = ClusterTaggableManager(through=NewsPageTag, blank=True)
-    #categories = ParentalManyToManyField('blog.BlogCategory', blank=True)
 
     search_fields = Page.search_fields + [
         index.SearchField('intro'),
@@ -46,9 +44,7 @@ class NewsPage(Page):
 
     content_panels = Page.content_panels + [
         MultiFieldPanel([
-            FieldPanel('date'),
-            #FieldPanel('tags'),
-            #FieldPanel('categories', widget=forms.CheckboxSelectMultiple),
+            FieldPanel('date')
             ],
             heading='Información'
         ),

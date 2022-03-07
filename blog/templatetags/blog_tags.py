@@ -19,11 +19,11 @@ def categories_list(context):
 
 @register.inclusion_tag('blog/components/footer_text.html', takes_context=True)
 def get_footer_text(context):
-    footer_text = ""
-    if FooterText.objects.first() is not None:
-        footer_text = FooterText.objects.first().body
-        footer_url = FooterText.objects.first().url
-
+    footer_text = FooterText.objects.all()
+    return {
+        'request': context['request'],
+        'footer_text': footer_text
+    }
     return {
         'footer_text': footer_text,
         'footer_url': footer_url,
@@ -39,7 +39,7 @@ def blog_tags_list(context):
 
 @register.inclusion_tag('blog/components/news_list.html', takes_context=True)
 def news_list(context):
-    noticias = NewsPage.objects.all()
+    noticias = NewsPage.objects.live().order_by('-date')[:5]
     return {
         'request': context['request'],
         'noticias': noticias

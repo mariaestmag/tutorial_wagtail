@@ -37,8 +37,6 @@ class BlogIndexPage(Page):
         context['blogpages'] = blogpages
         return context
 
-
-
 class BlogTagIndexPage(Page):
     # Sólo puede haber un index
     max_count = 1
@@ -116,6 +114,7 @@ class FilmPage(BlogPage):
         MultiFieldPanel([
             FieldPanel('intro'),
             FieldPanel('body'),
+            FieldPanel('tags'),
             FieldPanel('categories', widget=forms.CheckboxSelectMultiple),
             FieldPanel('date'),
             InlinePanel('lista_pelis')
@@ -163,9 +162,19 @@ class TravelPage(BlogPage):
         ),
     ]
 
+    def get_context(self, request):
+        context = super().get_context(request)
+        locations = TravelPage.objects.filter(blogpage_ptr_id=15) #busco la tupla que contiene los datos
+        text = locations.first().location
+        coordenadas = text[text.rindex("(")+1 : text.rindex(")")].split()
+        context['longitud'] = coordenadas[0]
+        context['latitud'] = coordenadas[1]
+        return context
+
+
 class BookPage(BlogPage):
     # Campos para cuando queramos crear una página sobre libros, hereda campos de BlogPage
-    libros = ParentalManyToManyField('libros.Libro', blank=True)
+    #libros = ParentalManyToManyField('libros.Libro', blank=True)
 
     # Pasamos campos de BlogPage para su búsqueda
     search_fields = Page.search_fields + [
@@ -178,9 +187,10 @@ class BookPage(BlogPage):
         MultiFieldPanel([
             FieldPanel('intro'),
             FieldPanel('body'),
+            FieldPanel('tags'),
             FieldPanel('categories', widget=forms.CheckboxSelectMultiple),
             FieldPanel('date'),
-            #FieldPanel('libros', widget=forms.Select),
+            InlinePanel('lista_libros')
             ],
             heading='Información'
         ),
@@ -191,6 +201,23 @@ class BookPage(BlogPage):
         context = super().get_context(request)
         context['libros'] = libros
         return context
+
+class LibrosOrderable(Orderable):
+    #Permite seleccionar libro desde Snippets (Fragmentos)
+    page = ParentalKey(BookPage, 
+        on_delete=models.CASCADE, 
+        related_name='lista_libros')
+    
+    libro = models.ForeignKey(
+        "libros.Libro",
+        on_delete=models.CASCADE, related_name="+"
+    )
+
+    panels = [
+    	# Usamos SnippetChooserPanel porque libros.Libro está registrada como tal
+        SnippetChooserPanel("libro"),
+    ]
+
 
 class BlogPageGalleryImage(Orderable):
     page = ParentalKey(BlogPage, 
@@ -227,11 +254,9 @@ class BlogCategory(models.Model):
         'wagtailimages.Image', null=True, blank=True,
         on_delete=models.SET_NULL, related_name='+'
     )
-    slug = models.SlugField(blank=True)
 
     panels = [
         FieldPanel('name'),
-        FieldPanel('slug'),
         ImageChooserPanel('icon'),
     ]
 

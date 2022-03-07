@@ -1,32 +1,63 @@
 {% extends "base.html" %}
 
-{% block extra_css %}
-<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
-{% endblock %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-blogpage{% endblock %}
 
 {% block content %}
-<table id="libros">
-    <thead><tr><th>Título</th><th>Autor</th><th>Sinopsis</th><th>Imagen</th></tr></thead>
-    <tbody>
-    {% for libro in libros %}
-    <tr><td>{{libro.title}}</td><td>{{libro.author}}</td><td>{{libro.summary}}</td><td><img src="{{libro.imagen}}" alt="{{peli.title}}" style="max-height: 200px; max-width: 100px;"></td></tr>
-    {% endfor%}
-    </tbody>
-    </table>
-<p><a href="{{ page.get_parent.url }}">Volver atrás</a></p>
+<div class="container">
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.date }}</p>
 
-{% endblock %}
+    <!-- Categorías-->
+    {% with categories=page.categories.all %}
+    {% if categories %}
+    <h6>Publicado en :</h6>
+    <ul>
+        {% for category in categories %}
+        <li style="display: inline">
+            {% image category.icon fill-32x32 style="vertical-align: middle" %}
+            {{ category.name }}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    <!--/ Categorías-->
+    <hr>
+    <!-- Snippet peli-->
+    <div class="row">
+        {% for item in page.lista_libros.all %}
+        <div class="col-md-3">
+            <h4>Libro review:</h4>
+            <p><b>Titulo:</b> {{ item.libro.title }}</p>
+            <p><b>Autor:</b> {{ item.libro.author }}</p>
+            <p><img src="{{ item.libro.imagen }}"></a></p>
+            <br>
+        </div>
+        {% endfor %}
+    </div>
+    <!--/ Snippet peli-->
+    <hr><br>
+    
+    <!-- Entrada de blog -->
+    <div class="intro">{{ page.intro }}</div>
+    {{ page.body|richtext }}
+    <hr>
+    <!-- /Entrada de blog -->
 
-{% block extra_js %}
-<script type="text/javascript" src="//cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <!--Tags-->
+    {% if page.tags.all.count %}
+    <div class="tags">
+        <h3>Tags</h3>
+        {% for tag in page.tags.all %}
+        <a href="{% slugurl 'tags' %}?tag={{ tag }}"><button type="button">{{ tag }}</button></a>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <!--/Tags-->
+    <br>
+    <p><a href="{{ page.get_parent.url }}">Volver atrás</a></p>
+</div>
 
-<script>
-    $(document).ready( function () {
-        $('#libros').DataTable({
-            language: {
-                url: '//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json'
-            }
-        });
-    } );
-    </script>
 {% endblock %}

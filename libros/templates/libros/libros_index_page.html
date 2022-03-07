@@ -7,21 +7,21 @@
 {% block content %}
 <div class="container">
     <h1>{{ page.title }}</h1>
-<hr>
+    <hr>
     <ul class="list-group">
-    {% for libro in libros %}
-    <li class="list-group-item"><a href="/listado-libros/detalle-libro?libro={{libro.id}}">{{libro.title}}</a></li>
-    {% endfor %}
-</ul>
+        {% for libro in libros %}
+        <li class="list-group-item"><a href="/listado-libros/detalle-libro?libro={{libro.id}}">{{libro.title}}</a></li>
+        {% endfor %}
+    </ul>
 
-{% if libros.paginator.count > 1 %}
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+    {% if libros.paginator.count > 1 %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
                 {% include "includes/pagination.html" with subpages=libros %}
-                </div>
             </div>
         </div>
+    </div>
     {% endif %}
 </div>
 {% endblock %}

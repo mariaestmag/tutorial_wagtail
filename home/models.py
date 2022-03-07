@@ -1,5 +1,5 @@
 from django.db import models
-from blog.models import BlogCategory, BlogPage
+from blog.models import BlogPage
 from wagtail.core.models import Page
 from wagtail.core.fields import RichTextField
 from wagtail.admin.edit_handlers import FieldPanel
@@ -14,3 +14,9 @@ class HomePage(Page):
     content_panels = Page.content_panels + [
         FieldPanel('body', classname="full"),
     ]
+
+    def get_context(self, request):
+        context = super().get_context(request)
+        blogpages = BlogPage.objects.all()
+        context['blogpages'] = blogpages 
+        return context   

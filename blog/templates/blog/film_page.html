@@ -29,23 +29,24 @@
     <div class="row">
         {% for item in page.lista_pelis.all %}
         <div class="col-md-3">
-            <h4>Pelicula:</h4>
-            <p>{{ item.pelicula.title }}</p>
+            <h4>Pelicula review:</h4>
+            <p><b>Titulo:</b> {{ item.pelicula.title }}</p>
             <p><a href="{{ item.pelicula.link }}">Link a IMDB</a></p>
-
+            <b>Género/s:</b>
             {% for genero in item.pelicula.generos.all %}
-            <p>{{ genero }}</p>
+            <div>{{ genero }}</div>
             {% endfor %}
-            <p>{{ item.pelicula.cast }}</p>
+            <br>
+            <b>Casting:</b>
+            <div>{{ item.pelicula.cast }}</div>
+            <br>
         </div>
         {% endfor %}
     </div>
     <!--/ Snippet peli-->
-    <hr>
+    <hr><br>
     <div class="intro">{{ page.intro }}</div>
-
     {{ page.body|richtext }}
-
     <hr>
     <!--Tags-->
     {% if page.tags.all.count %}
@@ -57,7 +58,7 @@
     </div>
     {% endif %}
     <!--/Tags-->
-
+    <br>
     <p><a href="{{ page.get_parent.url }}">Volver atrás</a></p>
 </div>
 

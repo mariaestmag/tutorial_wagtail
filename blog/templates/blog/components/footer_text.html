@@ -1,7 +1,7 @@
-{% load wagtailcore_tags %}
+{% load wagtailcore_tags static blog_tags %}
 
 <div class="copyright text-center text-muted" role="note">
-
-    <a href=" {{ footer_url }}">{{ footer_text|richtext }}</a>
-
+    {% for footer in footer_text %}
+    <a href=" {{ footer.url }}">{{ footer.body|richtext }}</a>
+    {% endfor %}
 </div>

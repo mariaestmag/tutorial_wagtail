@@ -1,7 +1,7 @@
 db.sqlite3
 *pyc
 env
-data.json
+*.json
 *.bak
 dump.sh
 nohup*
