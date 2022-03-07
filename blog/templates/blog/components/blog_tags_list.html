@@ -1,0 +1,9 @@
+{% load wagtailcore_tags blog_tags static %}
+
+<p class="lead mt-2">
+  {% for tag in tags %}
+  <button type="button" class="btn btn-outline-secondary"><a href="?tag={{ tag.id }}">{{ tag.tag }}</a></button>
+  {% empty %}
+  'No hay tags todavía'
+  {% endfor %}
+</p>

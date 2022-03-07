@@ -1,8 +1,7 @@
-{% load blog_tags static %}
+{% load blog_tags wagtailcore_tags static %}
 
 <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="" alt="">
+    <a class="navbar-brand d-flex align-items-center" href="{% slugurl 'home' %}">
         <span>
             Blog de Clase
         </span>
@@ -14,24 +13,26 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
             <li class="nav-item" id="home">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Blog
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                    <li><a class="dropdown-item" href="#">General</a></li>
-                    <li><a class="dropdown-item" href="#">Viajes</a></li>
-                    <li><a class="dropdown-item" href="#">Películas</a></li>
-                    <li><a class="dropdown-item" href="#">Libros</a></li>
-                </ul>
+                <a class="nav-link" href="{% slugurl 'home' %}">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Scrapping</a>
+                <a class="nav-link" href="{% slugurl 'blog-de-clase' %}">Blog</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% slugurl 'index-noticias' %}">Noticias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% slugurl 'listado-pelis' %}">Peliculas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% slugurl 'listado-libros' %}">Libros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% slugurl 'contacto' %}">Contacto</a>
+            </li>
+     
         </ul>
     </div>
 </div>

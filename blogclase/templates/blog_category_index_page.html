@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-blogindexpage{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% for blog in blogpages %}
+    <li class="list-group-item">{{blog.title}}</li>
+    <li class="list-group-item">{{blog.categories}}</li>
+    {% empty %}
+    <p>No hay posts con esa categoría todavía ... </p>
+    {% endfor %}
+</div>
+{% endblock %}

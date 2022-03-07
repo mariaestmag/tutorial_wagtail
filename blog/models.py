@@ -1,3 +1,4 @@
+from unicodedata import category
 from django.db import models
 from libros.models import Libro
 from django import forms
@@ -30,12 +31,13 @@ class BlogIndexPage(Page):
     ]
 
     def get_context(self, request):
-        # Devuelve lista de los subtipos anteriores mientras estén públicos y ordenados por fecha siendo el más antiguo el primero 
+        # Lista de blogs empezando por el más antiguo 
         context = super().get_context(request)
         blogpages = self.get_children().live().order_by('-first_published_at')
         context['blogpages'] = blogpages
-        
         return context
+
+
 
 class BlogTagIndexPage(Page):
     # Sólo puede haber un index
@@ -49,12 +51,17 @@ class BlogTagIndexPage(Page):
         context['blogpages'] = blogpages
         return context
 
+@register_snippet
 class BlogPageTag(TaggedItemBase):
     content_object = ParentalKey(
         'BlogPage',
         related_name='tagged_items',
         on_delete=models.CASCADE
     )
+
+    class Meta:
+        verbose_name = 'Tag'
+        verbose_name_plural = 'Tags'
 
 
 class BlogPage(Page):
@@ -84,11 +91,21 @@ class BlogPage(Page):
             label="Galería de imágenes"),
     ]
 
+    def get_context(self, request):
+        context = super().get_context(request)
+        blogpages = BlogPage.objects.all()
+        categoria_id = request.GET.get('categoria')
+
+        if categoria_id:
+            blogpages = BlogPage.objects.filter(blogcategory__id=categoria_id) #sobreescribo la lista de libros con la condición
+
+        context['blogpages'] = blogpages 
+      
+        return context    
 
 
 class FilmPage(BlogPage):
-    
-    # Pasamos campos de BlogPage para su búsqueda
+    # Al heredar de BlogPage, hereda sus atributos
     search_fields = Page.search_fields + [
         index.SearchField('intro'),
         index.SearchField('body'), 
@@ -99,6 +116,7 @@ class FilmPage(BlogPage):
         MultiFieldPanel([
             FieldPanel('intro'),
             FieldPanel('body'),
+            FieldPanel('categories', widget=forms.CheckboxSelectMultiple),
             FieldPanel('date'),
             InlinePanel('lista_pelis')
             ],
@@ -137,6 +155,7 @@ class TravelPage(BlogPage):
         MultiFieldPanel([
             FieldPanel('intro'),
             FieldPanel('body'),
+            FieldPanel('categories', widget=forms.CheckboxSelectMultiple),
             FieldPanel('date'),
             LeafletPanel('location'),
             ],
@@ -159,6 +178,7 @@ class BookPage(BlogPage):
         MultiFieldPanel([
             FieldPanel('intro'),
             FieldPanel('body'),
+            FieldPanel('categories', widget=forms.CheckboxSelectMultiple),
             FieldPanel('date'),
             #FieldPanel('libros', widget=forms.Select),
             ],
@@ -171,7 +191,6 @@ class BookPage(BlogPage):
         context = super().get_context(request)
         context['libros'] = libros
         return context
-
 
 class BlogPageGalleryImage(Orderable):
     page = ParentalKey(BlogPage, 
@@ -187,6 +206,19 @@ class BlogPageGalleryImage(Orderable):
         FieldPanel('caption'),
     ]
 
+
+class BlogCategoryIndexPage(Page):
+    # Sólo puede haber un index
+    max_count = 1
+
+    def get_context(self, request):
+        # Filtra por tag cuando lo pida la página
+        categoria = request.GET.get('categoria')
+        blogpages = BlogPage.objects.filter(categories=categoria)
+        context = super().get_context(request)
+        context['blogpages'] = blogpages
+        return context
+
 @register_snippet
 class BlogCategory(models.Model):
     # Crea categorías
@@ -195,9 +227,11 @@ class BlogCategory(models.Model):
         'wagtailimages.Image', null=True, blank=True,
         on_delete=models.SET_NULL, related_name='+'
     )
+    slug = models.SlugField(blank=True)
 
     panels = [
         FieldPanel('name'),
+        FieldPanel('slug'),
         ImageChooserPanel('icon'),
     ]
 
@@ -208,12 +242,7 @@ class BlogCategory(models.Model):
         verbose_name_plural = 'categorías de blog'
         verbose_name = 'categoría de blog'
 
-    def get_context(self, request):
-        categorias = BlogCategory.objects.all()
-        context = super().get_context(request)
-        context['categorias'] = categorias
-        return context    
-    
+
 @register_snippet
 class FooterText(models.Model):
     # Crea vínculos para el footer

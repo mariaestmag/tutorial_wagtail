@@ -1,20 +1,17 @@
-<div class="card my-4">
-    <h5 class="card-header">Categorías</h5>
-    <div class="card-body">
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="list-unstyled mb-0">
-            {% for category in categories %}
-              <li>
-                <a href="#"> 
-                  {{ category.name }}
-                </a>
-              </li>
-            {% empty %}
-              'No categories yet'
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
+{% load wagtailcore_tags blog_tags static %}
+
+<div class="row">
+  <div class="col-lg-12">
+    <ul class="list-unstyled mb-0">
+      {% for category in categories %}
+      <li>
+        <a href="/listado-categorias/?categoria={{category.id}}">
+          {{ category.name }}
+        </a>
+      </li>
+      {% empty %}
+      'No hay ninguna categoría.'
+      {% endfor %}
+    </ul>
   </div>
+</div>
