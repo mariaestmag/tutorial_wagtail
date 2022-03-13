@@ -13,7 +13,6 @@ from wagtail.snippets.models import register_snippet
 
 @register_snippet
 class Libro(models.Model):
-
     title = models.CharField('título', max_length=250)
     author = models.CharField('autor', max_length=250)
     summary = models.CharField('sinopsis', max_length=500)
@@ -36,6 +35,7 @@ class Libro(models.Model):
 
 
 class LibroDetailPage(Page):
+
     max_count = 1
 
     introduccion = RichTextField(blank=True)
@@ -64,11 +64,14 @@ class LibroDetailPage(Page):
         return context
         
 class LibrosIndexPage(Page):
+    
     max_count = 1
 
     introduccion = RichTextField(blank=True)
 
-    subpage_types = ['libros.LibroDetailPage',]
+    # Parent page / subpage type rules
+    parent_page_types = ['home.HomePage']
+    subpage_types = []
 
     content_panels = Page.content_panels + [
         FieldPanel('introduccion', classname="full")

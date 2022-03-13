@@ -21,7 +21,8 @@ class BlogIndexPage(Page):
     # Sólo puede haber un index
     max_count = 1
 
-    # Éste index sólo puede permitir los siguientes tipos de páginas
+    # Parent page / subpage type rules
+    parent_page_types = ['home.HomePage']
     subpage_types = ['blog.BlogPage','blog.FilmPage','blog.TravelPage','blog.BookPage']
 
     introduccion = RichTextField(blank=True)
@@ -70,6 +71,10 @@ class BlogPage(Page):
     tags = ClusterTaggableManager(through=BlogPageTag, blank=True)
     categories = ParentalManyToManyField('blog.BlogCategory', blank=True)
 
+    # Parent page / subpage type rules
+    parent_page_types = ['blog.BlogIndexPage']
+    subpage_types = []
+
     search_fields = Page.search_fields + [
         index.SearchField('intro'),
         index.SearchField('body'),
@@ -103,6 +108,12 @@ class BlogPage(Page):
 
 
 class FilmPage(BlogPage):
+
+    # Parent page / subpage type rules
+    parent_page_types = ['blog.BlogIndexPage']
+    subpage_types = []
+
+
     # Al heredar de BlogPage, hereda sus atributos
     search_fields = Page.search_fields + [
         index.SearchField('intro'),
@@ -140,6 +151,11 @@ class PeliculasOrderable(Orderable):
     ]
 
 class TravelPage(BlogPage):
+
+     # Parent page / subpage type rules
+    parent_page_types = ['blog.BlogIndexPage']
+    subpage_types = []
+
     # Campos para cuando queramos crear una página sobre viajes, hereda campos de BlogPage
     location = models.CharField(max_length=250, blank=True, null=True)  
 
@@ -173,8 +189,11 @@ class TravelPage(BlogPage):
 
 
 class BookPage(BlogPage):
-    # Campos para cuando queramos crear una página sobre libros, hereda campos de BlogPage
-    #libros = ParentalManyToManyField('libros.Libro', blank=True)
+    
+    # Parent page / subpage type rules
+    parent_page_types = ['blog.BlogIndexPage']
+    subpage_types = []
+
 
     # Pasamos campos de BlogPage para su búsqueda
     search_fields = Page.search_fields + [

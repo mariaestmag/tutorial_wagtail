@@ -68,6 +68,10 @@ class Pelicula(models.Model):
 class PelisIndexPage(Page):
     max_count = 1
 
+    # Parent page / subpage type rules
+    parent_page_types = ['home.HomePage']
+    subpage_types = []
+
     introduccion = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [

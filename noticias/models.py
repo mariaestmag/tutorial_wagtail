@@ -5,13 +5,15 @@ from wagtail.core.fields import RichTextField
 from wagtail.admin.edit_handlers import FieldPanel, InlinePanel,  MultiFieldPanel
 from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.snippets.models import register_snippet
-
-
 from wagtail.search import index
 
 
 class NewsIndexPage(Page):
     max_count = 1
+
+    # Parent page / subpage type rules
+    parent_page_types = ['home.HomePage']
+    subpage_types = ['noticias.NewsPage']
 
     introduccion = RichTextField(blank=True)
 
@@ -35,6 +37,10 @@ class NewsPage(Page):
     intro = models.CharField("Introducción", max_length=250)
     summary = RichTextField(blank=True)
     body = RichTextField(blank=True)
+
+    # Parent page / subpage type rules
+    parent_page_types = ['noticias.NewsIndexPage']
+    subpage_types = []
 
     search_fields = Page.search_fields + [
         index.SearchField('intro'),

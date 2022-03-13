@@ -26,6 +26,9 @@ class FormField(AbstractFormField):
     )
 
 class ContactPage(AbstractEmailForm):
+    # Parent page / subpage type rules
+    parent_page_types = ['home.HomePage']
+    subpage_types = []
 
     template = "contact/contact_page.html"
     landing_page_template = "contact/contact_page_landing.html"
