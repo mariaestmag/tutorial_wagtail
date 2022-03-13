@@ -29,7 +29,7 @@ class Libro(models.Model):
     ]
     def __str__(self):
         return f'{self.title} ({self.author})'
-    
+        
     class Meta:
         verbose_name = 'Libro'
         verbose_name_plural = 'Libros'

@@ -9,6 +9,7 @@ class LibrosAdmin(ModelAdmin):
     search_fields = ('title', 'cast', 'year')
     menu_icon = 'fa-book'
     menu_order = 200  
+    list_display = ('title','summary', 'imagen')
 
 
 class LibrosAdminGroup(ModelAdminGroup):
